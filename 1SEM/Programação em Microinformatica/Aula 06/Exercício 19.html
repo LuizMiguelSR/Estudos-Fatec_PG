@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 20 - Soma de Ímpares Consecutivos II</title>
+</head>
+<body>
+    <h1>Sec 08 - Exercício 20</h1>
+    <script>
+    var x = null;
+    var y = null;
+    var i = null;
+    var c = null;
+    
+    for (i = 1; i < 5; i++) {
+        n1 = Number.parseInt(window.prompt(`Valor na posição ${i}`));
+        if (i == 1) {
+            maior = n1;
+            pos = i
+        } else {
+            if (n1 >= maior) {
+                maior = n1;
+                pos = i
+            }
+        }
+    }
+    document.write(`Maior ${maior}"</br>"Posição ${pos}`);
+    </script>
+</body>
+</html>

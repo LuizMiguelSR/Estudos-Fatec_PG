@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 14 - 3 Estacionamento</title>
+</head>
+<body>
+    <h1>Sec 06 - Exercício 14 - 3</h1>
+    <script>
+    var a = null;
+    
+    a = Number.parseFloat(window.prompt("Valor R$"));
+
+    if (a >= 1.00 && a <= 1.74) {
+        troco = a - 1.00;
+        document.write('Tempo: 30 min');
+        document.write('</br>');
+        document.write('Troco R$ ',troco.toFixed(2));
+    } else if (a >= 1.75 && a <= 2.99) {
+        troco = a - 1.75;
+        document.write('Tempo: 60 min');
+        document.write('</br>');
+        document.write('Troco R$ ',troco.toFixed(2));
+    } else if (a >= 3.00){
+        troco = a - 3.00;
+        document.write('Tempo: 120 min');
+        document.write('</br>');
+        document.write('Troco R$ ',troco.toFixed(2));
+    } else {
+        document.write('Valor insuficiente')
+    }
+    </script>
+</body>
+</html>

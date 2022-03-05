@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - EX 24</title>
+</head>
+<body>
+    <h1>Seção 13</h1>
+    <h2>Exercício 24 -1</h2>
+
+    <div>
+        <h3>Exercício relacionado 14 - 1</h3>
+        Digite o valor de "N": <input type="number" id="num"> <input type="button" value="Calcular" onclick="calc1()">
+    </div>
+    <script>
+        var n = document.getElementById('num');
+        function calc1() {
+            if (n.value % 2 == 0) {
+                res1.innerHTML = `O valor é PAR!`
+            } else {
+                res1.innerHTML = `O valor é ÍMPAR!`
+            }
+            n.value = ''
+            n.focus()
+        }
+    </script>
+    <div id="res1"></div>
+
+    <div>
+        <h3>Exercício relacionado 14 - 2</h3>
+        <p>Digite a velocidade permitida: <input type="number" id="velp"></p>
+        <p>Digite a velocidde do condutor: <input type="number" id="velc"></p>
+        <p><input type="button" value="Calcular" onclick="calc2()"></p>
+    </div>
+    <script>
+        function calc2() {
+            var a = document.getElementById('velp');
+            var b = document.getElementById('velc');
+            var r = a.value.length*1.20;
+            if (b.value.length <= a.value.length) {
+                res2.innerHTML = `Velocidade do condutor é ${b.value}km/h, o permitido é ${a.value}km/h Sem multa`; 
+            } else if ((b.value.length > a.value.length)&&(b.value.length <= r)) {
+                res2.innerHTML = `Velocidade do condutor é ${b.value}km/h, o permitido é ${a.value}km/h Multa Leve`;
+            } else if (b.value.length > r) {
+                res2.innerHTML = `Velocidade do condutor é ${b.value}km/h, o permitido é ${a.value}km/h Multa Grave`;
+            }
+            velp.value = ''
+            velp.focus()
+            velc.value = ''
+            velc.focus()
+        }
+    </script>
+    <div id="res2"></div>
+
+    <div>
+        <h3>Exercício relacionado 14 - 3</h3>
+        Valor em R$: <input type="number" id="valor"> <input type="button" value="Calcular" onclick="calc3()">
+    </div>
+    <script>
+        var din = document.getElementById('valor');
+        function calc3() {
+            a = Number(din.value);        
+            if (a >= 1.00 && a <= 1.74) {
+                troco = a - 1.00;
+                res3.innerHTML = 'Tempo: 30 min'
+                res3.innerHTML += '</br>'
+                res3.innerHTML += `Troco R$ ${troco.toFixed(2)}`;
+            } else if (a >= 1.75 && a <= 2.99) {
+                troco = a - 1.75;
+                res3.innerHTML = 'Tempo: 60 min'
+                res3.innerHTML += '</br>'
+                res3.innerHTML += `Troco R$ ${troco.toFixed(2)}`;
+            } else if (a >= 3.00){
+                troco = a - 3.00;
+                res3.innerHTML = 'Tempo: 120 min'
+                res3.innerHTML += '</br>'
+                res3.innerHTML += `Troco R$ ${troco.toFixed(2)}`;
+            } else {
+                res3.innerHTML = 'Valor insuficiente'
+            }
+            valor.value = ''
+            valor.focus()
+        }
+    </script>
+    <div id="res3"></div>
+    <footer>Luiz Miguel Santos Rodrigues</footer> 
+</body>
+</html>

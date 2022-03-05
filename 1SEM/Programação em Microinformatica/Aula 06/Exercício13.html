@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 13 - Intervalo</title>
+</head>
+<body>
+    <h1>Sec 05 - Exercício 13</h1>
+    <script>
+    var n = null;
+    
+    n = Number.parseFloat(window.prompt("Informe o valor de N"));
+
+    if (n >= 0.00 && n <= 25.00) {
+        document.write('Intervalo [0,25]');
+        document.write('</br>')
+    } else if (n >= 25.01 && n <= 50.00) {
+        document.write('Intervalo (25,50]');
+        document.write('</br>')
+    } else if (n >= 50.01 && n <= 75.00) {
+        document.write('Intervalo (50,75]');
+        document.write('</br>')
+    } else if (n >= 75.01 && n <= 100.00) {
+        document.write('Intervalo (75,100]');
+        document.write('</br>')
+    } else {
+        document.write('Fora do Intervalo');
+        document.write('</br>')
+    }
+    </script>
+</body>
+</html>

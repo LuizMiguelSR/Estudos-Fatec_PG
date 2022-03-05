@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - EX 24</title>
+</head>
+<body>
+    <h1>Seção 13</h1>
+    <h2>Exercício 24 - 2</h2>
+    <div>
+        <h3>Exercício relacionado 17 - 1</h3>
+        <p>Digite o nome da fruta: <input type="text" id="fruit"></p>
+        <p>Digite o número de vezes: <input type="number" id="nvez"></p>
+        <p><input type="button" value="Calcular" onclick="calc1()"></p>
+    </div>
+    <script>
+        var fruta = document.getElementById('fruit');
+        var n = document.getElementById('nvez');
+        function calc1() {
+            var a = Number(n.value)
+            for (var i = 0; i <= a-1; i++) {
+                res1.innerHTML += `* ${fruta.value} `;
+            }
+            fruit.value = ''
+            fruit.focus()
+            nvez.value = ''
+            nvez.focus()
+        }
+    </script>
+    <div id="res1"></div>
+    <div>
+        <H3>Exercício relacionado 17 - 2</H3>
+        <p>Digite o número de chinchilas: <input type="number" id="nc"></p>
+        <p>Digite o númeor de anos: <input type="number" id="an"></p>
+        <p><input type="button" value="Calcular" onclick="calc2()"></p>
+    </div>
+    <script>
+        function calc2() {
+            var c = document.getElementById('nc');
+            var chi = Number(c.value)
+            var b = document.getElementById('an');
+            var n = Number(b.value)
+            var tot = null;
+            tot = chi
+            for (var i = 1; i < n+1; i++) {
+                res2.innerHTML += `${i}º Ano: ${tot} chinchilas"</br>"`;
+                tot = tot * 3
+            }
+            nc.value = ''
+            nc.focus()
+            an.value = ''
+            an.focus()
+        }
+    </script>
+    <div id="res2"></div>
+    <div>
+        <h3>Exercício relacionado 17 - 3</h3>
+        <p>Digite um número: <input type="number" id="num"> <input type="button" value="Calcular" onclick="calc3()"></p>
+    </div>
+    <script>
+        function calc3() {
+            var a = document.getElementById('num');
+            var n = Number(a.value)
+            var cont = null;
+            var som = [];    
+            for (var i = 1; i < n; i++) {
+                if (n%i==0) {
+                    cont = cont + i;
+                    som.unshift(i);
+                }
+            }
+            res3.innerHTML = `Divisores de ${n}: ${som.reverse()} (Soma: ${cont})"</br>"`
+            if (cont == n) {
+                res3.innerHTML += `${n} é um número perfeito."</br>"`
+            } else {
+                res3.innerHTML += `${n} é um número perfeito."</br>"`
+            }
+            num.value = ''
+            num.focus()
+        }
+    </script>
+    <div id="res3"></div>
+    <div>
+        <h3>Exercício 17 - 4</h3>
+        <p>Digite o número de linhas: <input type="number" id="nl"> <input type="button" value="Calcular" onclick="calc4()"></p>
+    </div>
+    <script>
+        function calc4() {
+            var d = document.getElementById('nl');
+            var n1 = Number(d.value);
+            var cont = "*";
+            for (var i = 1; i < n1+1; i++) {
+                res4.innerHTML += `${cont}"</br>"`
+                cont = cont + "*"
+            }
+            nl.value=''
+            nl.focus()
+        }
+    </script>
+    <div id="res4"></div>
+    <footer>Luiz Miguel Santos Rodrigues</footer> 
+</body>
+</html>

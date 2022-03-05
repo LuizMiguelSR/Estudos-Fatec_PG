@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08 - Array</title>
+</head>
+<body>
+    <h1>Seção 09</h1>
+    <h2>Exercício 21 - 3</h2>
+    Array<p id="valor1">Aqui será os valores da Array</p>
+    Positivos<p id="valor2">Aqui será os valores da Array positivos</p>
+    Negativos<p id="valor3">Aqui será os valores da Array negativos</p>
+    
+    <script>
+        var vetor1 = []
+        var vetor2 = []
+        var vetorr = []
+        for (c = 0; c < 5; c++) {
+            cont = prompt("Digite os valores do 1º array: ");
+            vetor1.push(cont)
+            if (cont >= 0){
+                vetor2.push(cont)
+            } else {
+                vetorr.push(cont)
+            }
+        }
+        document.getElementById("valor1").innerHTML = vetor1
+        document.getElementById("valor2").innerHTML = vetor2
+        document.getElementById("valor3").innerHTML = vetorr
+    </script>
+    <footer>Luiz Miguel</footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 17 - 3 Número perfeito</title>
+</head>
+<body>
+    <h1>Sec 07 - Exercício 17 - 3</h1>
+    <script>
+    var n = null;
+    var i = null;
+    var cont = null;
+    var som = [];
+    
+    n = Number.parseInt(window.prompt("Número"));
+
+    for (i = 1; i < n; i++) {
+        if (n%i==0) {
+            cont = cont + i;
+            som[i]=i;
+        }
+    }
+    document.write(`Divisores de ${n}: ${som} (Soma: ${cont})"</br>"`);
+    if (cont == n) {
+        document.write(`${n} é um número perfeito."</br>"`);
+    } else {
+        document.write(`${n} não é um número perfeito."</br>"`);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 16 Múltiplos</title>
+</head>
+<body>
+    <h1>Sec 06 - Exercício 16</h1>
+    <script>
+    var n1 = null;
+    var n2 = null;
+    
+    n1 = Number.parseInt(window.prompt("Valor de N1"));
+    n2 = Number.parseInt(window.prompt("Valor de N2"));
+    
+    if (n1 % n2 == 0 || n2 % n1 == 0) {
+        document.write('São Múltiplos');
+    } else {
+        document.write('Não são múltiplos');
+    }
+    </script>
+</body>
+</html>

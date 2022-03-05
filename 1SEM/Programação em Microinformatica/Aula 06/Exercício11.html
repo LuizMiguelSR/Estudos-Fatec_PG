@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 11 - Teste de Seleção</title>
+</head>
+<body>
+    <h1>Sec 05 - Exercício 11</h1>
+    <script>
+        var a = null;
+        var b = null;
+        var c = null;
+        var d = null;
+        var somaAB = null;
+        var somaCD = null;
+        var AePar = false;
+
+        //Ler vars
+        a = prompt("A");
+        b = prompt("B");
+        c = prompt("C");
+        d = prompt("D");
+        somaAB=a+b
+        somaCD=c+d
+
+        if ((b > c) && (d > a) && (somaCD > somaAB) && (c > 0) && (d > 0) && (a%2==0)) {
+            document.write("Valores Aceitos");
+            document.write("<br>");
+        } else {
+            document.write("Valores não aceitos");
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

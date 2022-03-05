@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 15 Coordenadas de um Ponto</title>
+</head>
+<body>
+    <h1>Sec 06 - Exercício 15</h1>
+    <script>
+    var x = null;
+    var y = null;
+    
+    x = Number.parseFloat(window.prompt("Coordenada X"));
+    y = Number.parseFloat(window.prompt("Coordenada Y"));
+    
+    if (x > 0) {
+        if (y > 0) {
+            document.write('Q1')
+        }
+        if (y < 0) {
+            document.write('Q4')
+        }
+    }
+    if (x < 0) {
+        if (y > 0) {
+            document.write('Q2')
+        }
+        if (y < 0) {
+            document.write('Q3')
+        }
+    }
+    if (x == 0) {
+        if (y == 0) {
+            document.write('Origem')
+        }
+        if (y != 0) {
+            document.write('Eixo Y')
+        }
+    }
+    if (y == 0) {
+        if (x != 0) {
+            document.write('Eixo X')
+        }
+    }
+    </script>
+</body>
+</html>

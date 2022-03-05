@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Condicional</title>
+</head>
+<body>
+    <h1>Sec 05 - Teste Condicional</h1>
+    <script>
+        var A = null;
+        var B = null;
+        var somaAB = null;
+        var AePar = false;
+
+        //Ler vars
+        A = prompt("Valor inteiro de A");
+        B = prompt("Valor inteiro de B");
+        somaAB = A + B;
+
+        //Teste IF apenas
+        /* if (AePar) {
+            document.write("AePAr = Verdadeiro");
+            document.write("<br>");
+        }
+        if (!AePar) {
+            document.write("AePAr = Verdadeiro");
+            document.write("<br>");
+        }
+
+        //Teste IF-ELSE
+        //Testar se B é maior que zero
+        if(Boolean(B>0)) {
+            document.write("B > do Zero");
+            document.write("<br>");
+        } else {
+            document.write("B < do Zero");
+            document.write("<br>");
+        }
+
+        //Teste IF-ELSE- ELSE IF
+        if (Boolean (B>0)) {
+            document.write("B > do Zero");
+            document.write("<br>");
+        } else if (Boolean (A>0)) {
+            document.write("A > do Zero");
+            document.write("<br>");
+        } else {
+            document.write("Nem A e Nem B são > do Zero");
+            document.write("<br>");
+        } */
+
+        //Teste com Switch
+        switch (Boolean(B > A)) {
+            case true:
+                document.write("B > do que A");
+                document.write("<br>");
+                break;
+            case false:
+                document.write("A > do que B");
+                document.write("<br>");
+                break;
+            default:
+                document.write("A e B são iguais");
+                document.write("<br>");
+                break;
+        }
+    </script>
+</body>
+</html>

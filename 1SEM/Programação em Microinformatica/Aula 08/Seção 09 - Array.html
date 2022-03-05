@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08 - Array</title>
+</head>
+<body>
+      <h1>Seção 09 - Array</h1>
+      <h2>Array e Método de Array</h2>
+
+      <p id="av">Aqui será apresentado o valor do vetor</p>
+      <p id="tv">Aqui será apresentado o tamanho do vetor</p>
+
+      <p>
+        Botão 1 = Apresentar o vetor <br>
+        Botão 2 = Inserir novos valores <br>
+        Botão 3 = Eliminar último valor pop() <br>
+        Botão 4 = Inserir novo valor no final push() <br>
+        Botão 5 = Elimina o primeiro valor e realoca os demais shift() <br>
+        Botão 6 = Inserir um novo elemento na primeira posição unshift() <br>
+        Botão 7 = Deleta o conteúdo, tornando o identificador nulo delete <br>
+        Botão 8 = Insere elementos a partir de uma posição splice() <br>
+      </p>
+
+      <button onclick="mfunc1()">Botão 1</button>
+      <button onclick="mfunc2()">Botão 2</button>
+      <button onclick="mfunc3()">Botão 3</button>
+      <button onclick="mfunc4()">Botão 4</button>
+      <button onclick="mfunc5()">Botão 5</button>
+      <button onclick="mfunc6()">Botão 6</button>
+      <button onclick="mfunc7()">Botão 7</button>
+      <button onclick="mfunc8()">Botão 8</button>
+
+      <script>
+        var vmatriz = ["Valor1", "Valor2", "Valor3"];
+        var x = "";
+        var vpos = 0;
+        var vaca = 0;
+        function mfunc1() {
+            document.getElementById("av").innerHTML = vmatriz
+            document.getElementById("tv").innerHTML = vmatriz.length
+        }
+        function mfunc2() {
+            for (c = 0; c < 3; c++) {
+                vmatriz [c] = prompt(`Digite o valor ${c}: `);
+            }
+            document.getElementById("av").innerHTML = vmatriz
+        }
+        function mfunc3() {
+            vmatriz.pop();
+        }
+        function mfunc4() {
+            x = prompt("Digite um valor: ");
+            vmatriz.push(x);
+        }
+        function mfunc5() {
+            vmatriz.shift();
+        }
+        function mfunc6() {
+            x = prompt("Digite um valor: ");
+            vmatriz.unshift(x);
+        }
+        function mfunc7() {
+            x = prompt("Digite a posição para deletar: ");
+            delete vmatriz[x];
+        }
+        function mfunc8() {
+            vpos = prompt("Qual a posição: ");
+            vaca = prompt("Quantos indices quer deletar: ");
+            insert = prompt("O que inserir");
+            vmatriz.splice(vpos,vaca,`${insert}`);
+        }
+      </script>
+      <footer>Luiz Miguel</footer>
+</body>
+</html>

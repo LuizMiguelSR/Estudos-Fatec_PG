@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - EX 22</title>
+</head>
+<body>
+    <h1>Seção 11</h1>
+    <h2>Exercício 22 -2</h2>
+    <p id="lp"><strong>Lanches (preços): </strong></p>
+    <p id="ft"><strong>Filtro: </strong></p>
+    <script>
+        var lanches = []
+        var precos = []
+        var filtrado = []
+        var filtrado2 = []
+        for (c=1; c < 6; c++) {
+            vet1 = prompt(`Digite o nome do ${c}º lanche`);
+            lanches.push(vet1)
+            vet2 = Number.parseFloat(prompt(`Digite o preço desse lanche`));
+            precos.push(vet2)
+        }
+        filtro = Number.parseFloat(prompt(`Digite o preço a ser filtrado`));
+        for (i=0; i < 5; i++) {
+            document.getElementById("lp").innerHTML += `${lanches[i]} (R$ ${precos[i].toFixed(2)}) `
+        }
+        for (c=0; c < 5; c++) {
+            if (c==0) {
+                maior = precos[c]
+                filtrado.unshift(lanches[c])
+                filtrado2.unshift(precos[c])
+            } else {
+                if (precos[c] > maior) {
+                    filtrado.unshift(lanches[c])
+                    filtrado2.unshift(precos[c])
+                } else {
+                    filtrado.push(lanches[c])
+                    filtrado2.push(precos[c])
+                }
+            }
+        }
+        filtrado.reverse()
+        filtrado2.reverse()
+        for (c = 0; c < 5; c++) {
+            if (filtrado2[c] <= filtro) {
+                document.getElementById("ft").innerHTML += `${filtrado[c]} (R$ ${filtrado2[c].toFixed(2)}) `
+            } 
+        }
+    </script>
+    <footer>Luiz Miguel Santos Rodrigues</footer> 
+</body>
+</html>

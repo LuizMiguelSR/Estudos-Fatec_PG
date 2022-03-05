@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 20</title>
+</head>
+<body>
+    <h1>Seção 08 - Exercício 20</h1>
+    <h2>Soma de Ímpares II</h2>
+    <p id="valor"></p>  
+    <script>
+        var n = Number;
+        var x = Number;
+        var y = Number;
+
+        n = prompt("Digite a entrada de valores a serem pesquisados: ");
+
+        for (c=0; c < n; c++) {
+            x = prompt("Valor de X");
+            y = prompt("Valor de y");
+            somaimp = 0;
+            if (x > y) {
+                ma = x;
+                me = y
+            }
+            else {
+                ma = y;
+                me = x;
+            }
+            for (i = me+1; i < ma; i++) {
+                if (i%2!=0) {
+                    somaimp=somaimp + i;
+                }
+            }
+            valor.innerHTML += `${somaimp} </br>`;
+        }
+    </script>
+    <footer>Luiz Miguel</footer>
+</body>
+</html>

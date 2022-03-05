@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - EX 22</title>
+</head>
+<body>
+    <h1>Seção 11</h1>
+    <h2>Exercício 22 -1</h2>
+    <p id="cb"><strong>Clube (pontos): </strong></p>
+    <p id="oc"><strong>Ordem Crescente: </strong></p>
+    <p id="od"><strong>Ordem Decrescente: </strong></p>
+    <script>
+        var clube = []
+        var ponto = []
+        var cres = []
+        for (c=1; c < 6; c++) {
+            vet1 = prompt(`Digite o nome do ${c}º clube`);
+            clube.push(vet1)
+            vet2 = prompt(`Digite o total de pontos do ${c}º clube`);
+            ponto.push(vet2)
+        }
+        for (i=0; i < 5; i++) {
+            document.getElementById("cb").innerHTML += `${clube[i]} (${ponto[i]}pts.) `
+        }
+        for (c=0; c < 5; c++) {
+            if (c==0) {
+                maior = ponto[c]
+                cres.unshift(clube[c])
+            } else {
+                if (ponto[c] >  maior) {
+                    cres.unshift(clube[c])
+                } else {
+                    cres.push(clube[c])
+                }
+            }
+        }
+        for (c = 0; c < 5; c++) {
+            document.getElementById("oc").innerHTML += `${cres[c]} `
+        }
+        cres.reverse()
+        for (c = 0; c < 5; c++) {
+            document.getElementById("od").innerHTML += `${cres[c]} `
+        }
+    </script>
+    <footer>Luiz Miguel Santos Rodrigues</footer> 
+</body>
+</html>

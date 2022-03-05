@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 10 - Salário com bônus</title>
+</head>
+<body>
+    <h1>Sec 03 - Exercício 10</h1>
+    <script>
+        var nome = null;
+        var b = null;
+        var c = null;
+
+        nome = String(window.prompt("Nome do funcionário"));
+        b = Number.parseFloat(window.prompt("Salário fixo"));
+        c = Number.parseFloat(window.prompt("Montante"));
+        
+        sal=(c*0.15)+b;
+
+        document.write('TOTAL = R$ ',sal.toFixed(2));
+        document.write("<br>");
+    </script>
+    <footer>Luiz Miguel Santos Rodrigues</footer>
+</body>
+</html>

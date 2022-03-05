@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08 - Array</title>
+</head>
+<body>
+    <h1>Seção 09</h1>
+    <h2>Exercício 21 - 4</h2>
+    Array<p id="valor1">Aqui será os valores da Array</p>
+    Ordenado<p id="valor2">Aqui será os valores da ordenados</p>
+    
+    <script>
+        var vetor1 = []
+        for (c = 0; c < 5; c++) {
+            cont = prompt("Digite os valores do 1º array: ");
+            vetor1.push(cont)
+        }
+        document.getElementById("valor1").innerHTML = vetor1
+        vetor1.sort()
+        vetor1.reverse()
+        document.getElementById("valor2").innerHTML = vetor1
+    </script>
+    <footer>Luiz Miguel</footer>
+</body>
+</html>
