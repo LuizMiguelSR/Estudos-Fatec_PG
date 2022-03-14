@@ -43,7 +43,7 @@ public class JurosCompostosServlet extends HttpServlet {
                 
                 presente = Double.parseDouble(p1);
                 juros = Double.parseDouble(p2);
-                tempo = Double.parseDouble(p3);
+                tempo = Integer.parseInt(p3);
             }catch (Exception e){
                 error = e.getMessage();
             }
