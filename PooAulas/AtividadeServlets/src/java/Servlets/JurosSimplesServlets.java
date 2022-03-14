@@ -59,10 +59,13 @@ public class JurosSimplesServlets extends HttpServlet {
                 out.println("<span style='color:red'>Erro ao tentar ler parâmetros</span>");
             }else{
                 out.println("<div>");
-                juros = juros/100;
-                double calculo = juros * tempo;
-                calculo += 1;
-                out.println("Valor presente: "+presente+"</br>Juros: "+juros+"</br>Tempo: "+tempo+"</br>Valor Futuro: "+(presente * calculo));
+                out.printf("Valor presente: R$ %.2f\n", presente);
+                out.println("</br>Juros: "+juros+"%</br>");
+                juros /= 100;
+                double futuro = presente * (1 + (juros * tempo));
+                
+                out.printf("Tempo: %.0f\n", tempo);
+                out.printf("</br>Valor Futuro: R$ %.2f\n",futuro);
                 out.println("</div>");
             }
             out.println("</body>");

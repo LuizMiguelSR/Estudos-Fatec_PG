@@ -43,7 +43,7 @@ public class JurosCompostosServlet extends HttpServlet {
                 
                 presente = Double.parseDouble(p1);
                 juros = Double.parseDouble(p2);
-                tempo = Integer.parseInt(p3);
+                tempo = Double.parseDouble(p3);
             }catch (Exception e){
                 error = e.getMessage();
             }
@@ -59,11 +59,14 @@ public class JurosCompostosServlet extends HttpServlet {
                 out.println("<span style='color:red'>Erro ao tentar ler parâmetros</span>");
             }else{
                 out.println("<div>");
-                double calculo = Math.pow(juros, tempo);
-                calculo += 1;
-                double futuro = presente * calculo;
-                futuro = futuro + presente;
-                out.println("Valor presente: "+presente+"</br>Juros: "+(juros/100)+"</br>Tempo: "+tempo+"</br>Valor Futuro: "+futuro);
+                out.printf("Valor presente: R$ %.2f\n", presente);
+                out.println("</br>Juros: "+juros+"%</br>");
+                juros /= 100;
+                juros += 1;
+                double futuro = presente * Math.pow(juros, tempo);
+                
+                out.printf("Tempo: %.0f\n", tempo);
+                out.printf("</br>Valor Futuro: R$ %.2f\n",futuro);
                 out.println("</div>");
             }
             out.println("</body>");
