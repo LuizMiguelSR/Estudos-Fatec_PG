@@ -7,6 +7,8 @@ package Servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.NumberFormat;
+import java.util.Locale;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -33,16 +35,17 @@ public class JurosSimplesServlets extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
+            NumberFormat formatter = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
             String error = null;
-            double presente = 0.0, tempo = 0, juros = 0.0;
+            double presente = 0.0, tempo = 0.0, taxa = 0.0;
             
             try{
                 String p1 = request.getParameter("presente");
-                String p2 = request.getParameter("juros");
+                String p2 = request.getParameter("taxa");
                 String p3 = request.getParameter("tempo");
                 
                 presente = Double.parseDouble(p1);
-                juros = Double.parseDouble(p2);
+                taxa = Double.parseDouble(p2);
                 tempo = Integer.parseInt(p3);
             }catch (Exception e){
                 error = e.getMessage();
@@ -59,13 +62,12 @@ public class JurosSimplesServlets extends HttpServlet {
                 out.println("<span style='color:red'>Erro ao tentar ler parâmetros</span>");
             }else{
                 out.println("<div>");
-                out.printf("Valor presente: R$ %.2f\n", presente);
-                out.println("</br>Juros: "+juros+"%</br>");
-                juros /= 100;
-                double futuro = presente * (1 + (juros * tempo));
-                
-                out.printf("Tempo: %.0f\n", tempo);
-                out.printf("</br>Valor Futuro: R$ %.2f\n",futuro);
+                out.println("<b>Valor presente: </b> " + formatter.format(presente));
+                out.println("</br><b>Taxa:</b> "+taxa+"% </br>");
+                taxa /= 100;
+                double futuro = presente * (1+ (taxa * tempo));
+                out.printf("<b>Tempo:</b> %.0f meses\n", tempo);
+                out.print("</br><b>Valor Futuro: </b>" + formatter.format(futuro) + "</br>");
                 out.println("</div>");
             }
             out.println("</body>");
