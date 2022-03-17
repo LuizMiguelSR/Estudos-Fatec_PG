@@ -63,12 +63,10 @@ public class JurosCompostosServlet extends HttpServlet {
             }else{
                 out.println("<div>");
                 out.println("<b>Valor presente:</b> " + formatter.format(presente));
-                out.println("<br><b>Taxa:</b> "+taxa+"%</br>");
-                taxa /= 100;
-                taxa += 1;
-                double futuro = presente * Math.pow(taxa, tempo);             
-                out.printf("<b>Tempo: </b>%.0f\n", tempo);
-                out.println("</br><b>Valor Futuro: </b>" + formatter.format(futuro));
+                out.printf("<br><b>Tempo:</b> %.0f meses\n", tempo);
+                out.println("<br><b>Taxa:</b> " + taxa + "% a.m");
+                double futuro = presente * Math.pow((1+(taxa/100)), tempo);
+                out.println("<br><b>Valor futuro:</b> " + formatter.format(futuro));
                 out.println("</div>");
             }
             out.println("</body>");
