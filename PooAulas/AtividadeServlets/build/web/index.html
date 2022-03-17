@@ -14,19 +14,30 @@ and open the template in the editor.
         <h1>JavaEE Atividade Fixação</h1>
         <h3>Nome: Luiz Miguel Santos Rodrigues</h3>
         <h3>Matrícula: 1290482022031</h3>
-        <h3>Cálculo Juros Simples</h3>
         <form action="juros-simples.html">
-            Valor Presente: <input name="presente" type="number" step="any"/>
-            Taxa(%): <input name="taxa" type="number" step="any"/>
-            Tempo(meses) <input name="tempo" type="number"/>
-            <input name="generate" type="submit" value="="/>
-        </form>
-        <h3>Cálculo Juros Compostos</h3>
+            <fieldset>
+                <legend><h3>Juros Simples</h3></legend>
+                <label for="vp">Valor presente:</label><br>
+                <input name="presente" type="number" step="any"><br>
+                <label for="tx">Taxa(%):<label><br>
+                <input name="taxa" type="number" step="any"><br>
+                <label for="tp">Tempo:<label><br>
+                <input name="tempo" type="number"><br><br>
+                <input name="generate" type="submit" value="Calcular">
+            </fieldset>      
+        </form> 
+      
         <form action="juros-compostos.html">
-            Valor Presente: <input name="presente1" type="number" step="any"/>
-            Taxa(%): <input name="taxa1" type="number" step="any"/>
-            Tempo(meses) <input name="tempo1" type="number"/>
-            <input name="generate" type="submit" value="="/>
+            <fieldset>
+                <legend><h3>Juros Compostos</h3></legend>
+                <label for="vp1">Valor presente:</label><br>
+                <input name="presente1" type="number" step="any"><br>
+                <label for="tx1">Taxa(%):<label><br>
+                <input name="taxa1" type="number" step="any"><br>
+                <label for="tp1">Tempo:<label><br>
+                <input name="tempo1" type="number"><br><br>
+                <input name="generate" type="submit" value="Calcular">
+            </fieldset>      
         </form>
     </body>
 </html>
