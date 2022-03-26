@@ -52,5 +52,17 @@
 
   Linguagem de Programação (PHP)
 
+  - [Aula 02 - Conceitos](/LPIV/Aula02_Ambiente_Comentarios_Variaveis/);
+  - [Aula 03 - Operadores, Strings e Arrays](/LPIV/Aula03_Operadores_Strings_Arrays/);
+  - [Aula 04 - Arrays, Condicionais e Switch Case](/LPIV/Aula04_Arrays2_Condicionais_Switch/);
+  - [Aula 05 - Estruturas de repetição](/LPIV/Aula05_Estruturas_Repeticao/);
+  - [Aula 06 - Funções](/LPIV/Aula06_Funcoes/);
 
   POO (Java Web)
+
+  - [Aula 02 - Ambiente](/PooAulas/Aula02-Ambiente/);
+  - [Aula 03 - Servlets](/PooAulas/Aula03-Servelets/);
+  - [Aula 04 - JavaEE](/PooAulas/Aula04JavaEE/);
+  - [Aula 05 - Atividade](/PooAulas/AtividadeServlets/);
+  - [Aula 06 - JSP](/PooAulas/Aula06JSP/);
+  
