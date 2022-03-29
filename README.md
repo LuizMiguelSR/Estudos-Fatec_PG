@@ -65,5 +65,5 @@
   - [Aula 04 - JavaEE](/PooAulas/Aula04JavaEE/);
   - [Aula 05 - Atividade](/PooAulas/AtividadeServlets/);
   - [Aula 06 - JSP](/PooAulas/Aula06JSP/);
-  - [Aula 07 - Jspf](/PooAulas/Atividade07/);
+  - [Aula 07 - Jspf](/PooAulas/Aula07/web/) e [Tarefa 07](/PooAulas/Atividade07/web/);
   
