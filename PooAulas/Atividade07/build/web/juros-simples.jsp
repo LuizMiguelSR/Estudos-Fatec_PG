@@ -59,12 +59,13 @@
                 <button type="submit" name="calc" class="btn btn-primary">Calcular</button>
             </form>
         </div>
-        <hr/>
         <div class="container-fluid">
             <% if (errorMessage != null) {%>
                 <h4 style="color:red"><%= errorMessage %></h4>
             <%} else if (hasParameters) {%>
-                <h4> Valor Presente: <%= formatter.format(presente)%> <br>Taxa(%): <%= taxa %> <br>Tempo <%= tempo %> <br>Valor Futuro: <%= formatter.format(futuro) %></u></h4>    
+                <hr/>
+                <h4> Valor Presente: <%= formatter.format(presente)%> <br>Taxa(%): <%= taxa %> <br>Tempo <%= tempo %> <br>Valor Futuro: <%= formatter.format(futuro) %></u></h4>
+                <hr/>
             <%}%>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

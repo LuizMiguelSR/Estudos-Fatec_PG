@@ -59,35 +59,37 @@
                 <button type="submit" name="calc1" class="btn btn-primary">Calcular</button>
             </form>
         </div>
-        <hr/>
         <div class="container-fluid">
             <% if (errorMessage != null) {%>
                 <h4 style="color:red"><%= errorMessage %></h4>
             <%} else if (hasParameters) {%>
-                <h4> Valor Presente: <%= formatter.format(presente) %> <br>Taxa(%): <%= taxa %> <br>Tempo <%= tempo %> <br>Valor Futuro: <%= formatter.format(futuro) %></u></h4>    
+                <hr/>
+                <h4> Valor Presente: <%= formatter.format(presente) %> <br>Taxa(%): <%= taxa %> <br>Tempo <%= tempo %> <br>Valor Futuro: <%= formatter.format(futuro) %></u></h4>
+                <hr/>
+                <div class="container-fluid">   
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Valor Presente</th>
+                            <th scope="col">Taxa(%)</th>
+                            <th scope="col">Tempo</th>
+                            <th scope="col">Valor Futuro</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <% for(int i = 1; i <= tempo; i++){
+                               futuro = presente * Math.pow((1+(taxa/100)), i); %>
+                                <tr>
+                                    <td><%= formatter.format(presente) %></td>
+                                    <td><%= taxa %></td>
+                                    <td><%= i %></td>
+                                    <td><%= formatter.format(futuro) %></td>
+                                </tr>
+                            <%}%>
+                        </tbody>
+                    </table>
+                </div>
             <%}%>
-        </div>
-        <div class="container-fluid">
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Valor Presente</th>
-                    <th scope="col">Taxa(%)</th>
-                    <th scope="col">Tempo</th>
-                    <th scope="col">Valor Futuro</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <% for(int i = 1; i <= tempo; i++){%>
-                        <tr>
-                            <td><%= formatter.format(presente) %></td>
-                            <td><%= taxa %></td>
-                            <td><%= i %></td>
-                            <td><%= formatter.format(futuro) %></td>
-                        </tr>
-                    <%}%>
-                </tbody>
-            </table>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
