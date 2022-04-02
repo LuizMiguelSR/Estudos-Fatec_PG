@@ -17,6 +17,7 @@
         private function msg()
         {
             // Método acessível fora da classe
+            return $this -> nome . ' ' . $this -> codNome;
 
         }
 
@@ -31,6 +32,6 @@
     $humano1-> codNome = 'Assessor';
 
     $humano2 = new Pessoa2();
-    $humano2-> movimento();
+    echo $humano2-> movimento();
 
 ?>
