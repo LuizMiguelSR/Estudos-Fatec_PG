@@ -57,6 +57,7 @@
   - [Aula 04 - Arrays, Condicionais e Switch Case](/LPIV/Aula04_Arrays2_Condicionais_Switch/);
   - [Aula 05 - Estruturas de repetição](/LPIV/Aula05_Estruturas_Repeticao/);
   - [Aula 06 - Funções](/LPIV/Aula06_Funcoes/);
+  - [Aula 07 - Classes](/LPIV/Aula07_Classes/);
 
   POO (Java Web)
 
