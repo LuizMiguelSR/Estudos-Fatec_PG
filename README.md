@@ -58,6 +58,7 @@
   - [Aula 05 - Estruturas de repetição](/LPIV/Aula05_Estruturas_Repeticao/);
   - [Aula 06 - Funções](/LPIV/Aula06_Funcoes/);
   - [Aula 07 - Classes](/LPIV/Aula07_Classes/);
+  - [Prova 01](/LPIV/Prova1.php);
 
   POO (Java Web)
 
