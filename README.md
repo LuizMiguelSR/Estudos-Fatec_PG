@@ -68,4 +68,5 @@
   - [Aula 05 - Atividade](/PooAulas/AtividadeServlets/);
   - [Aula 06 - JSP](/PooAulas/Aula06JSP/);
   - [Aula 07 - Jspf](/PooAulas/Aula07/web/) e [Tarefa 07](/PooAulas/Atividade07/web/);
+  - [Aula 09 - ServletContext, HtppSession e HttpRequest](/PooAulas/Aula09/web/) e [Tarefa 09 - Controle de Sessão](/PooAulas/tarefa09/web/);
   
