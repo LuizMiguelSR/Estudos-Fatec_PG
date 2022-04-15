@@ -1,7 +1,5 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<h1>Luiz Miguel APP</h1>
-
 <% 
 if(request.getParameter("logon")!=null){
     session.setAttribute("username", request.getParameter("username"));
@@ -9,22 +7,25 @@ if(request.getParameter("logon")!=null){
 }
 if(request.getParameter("logoff")!=null){
     session.removeAttribute("username");
+    session.removeAttribute("arrayNaSessao");
     response.sendRedirect(request.getRequestURI());
 }
 %>
-<h1>SessionApp</h1>
+
 <% if(session.getAttribute("username")!=null){%>
 <form>
-    <a href="index.jsp">INDEX</a> |
-    <a href="page1.jsp">PAGE 1</a> |
-    <a href="page2.jsp">PAGE 2</a>
+    <a href="index.jsp">PÁGINA INICIAL</a> |
+    <a href="about.jsp">ABOUT</a> |
+    <a href="loteria.jsp">DICAS PARA LOTERIA</a>
     Bem vindo: <b><%= session.getAttribute("username")%></b>
     <input type="submit" name="logoff" value="Sair"/>
 </form>
 <%}else{%>
 <form>
-    <input type="text" name="username"/>
-    <input type="submit" name="logon"/>
+    <a href="index.jsp">PÁGINA INICIAL</a> |
+    <a href="about.jsp">ABOUT</a>
 </form>
 <%}%>
+
 <hr/>
+<h1>Luiz Miguel APP</h1>

@@ -12,8 +12,11 @@
         <title>About</title>
     </head>
     <body>
-        <h1>About</h1>
-        <h3>RA: 1290482022031</h3>
-        <a href="https://github.com/LuizMiguelSR/Fatec/tree/master/PooAulas/tarefa09">Link Github</a>
+        <%@include file="WEB-INF/jspf/header.jspf" %>
+        <h2>Informações</h2>
+        <p><b>Nome: </b>Luiz Miguel Santos Rodrigues</p>
+        <p><b>RA: </b>1290482022031</p>
+        <a href="https://github.com/LuizMiguelSR/Fatec/tree/master/PooAulas/tarefa09" target='_blank'>Link Github</a>
+        
     </body>
 </html>

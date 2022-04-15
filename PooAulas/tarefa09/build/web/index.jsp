@@ -9,21 +9,22 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Índice</title>
+        <title>Página Inicial</title>
     </head>
     <body>
-        <h1>Índice</h1>
-        
-        <% if(session.getAttribute("username")!=null){%>
-            <%@include file="WEB-INF/jspf/header.jspf" %>
-        <%}else{%>
-        <form>
-            <a href="index.jsp">INDEX</a> |
-            <a href="page1.jsp">PAGE 1</a> |
-            <a href="page2.jsp">PAGE 2</a>
-            Bem vindo: <b><%= session.getAttribute("username")%></b>
-            <input type="submit" name="logoff" value="Sair"/>
-        </form>
+        <%@include file="WEB-INF/jspf/header.jspf" %>
+        <%if(session.getAttribute("username") != null){%>
+            <h1>Página Inicial</h1>
+            <span>
+                <b>Bem vindo: </b><%= session.getAttribute("username")%>
+            </span>
+        <%} else {%>
+            <h1>Página Inicial</h1>
+            <h3>Faça seu Login abaixo</h3>
+            <form>
+                <b>Login: </b><input type="text" name="username"/>
+                <input type="submit" name="logon"/> 
+            </form>           
         <%}%>
     </body>
 </html>
