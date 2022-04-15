@@ -9,21 +9,29 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <title>Página Inicial</title>
     </head>
     <body>
         <%@include file="WEB-INF/jspf/header.jspf" %>
         <%if(session.getAttribute("username") != null){%>
-            <h1>Página Inicial</h1>
-            <span>
+        <h2 class="container-fluid">Página Inicial</h2>
+            <span class="container-fluid">
                 <b>Bem vindo: </b><%= session.getAttribute("username")%>
             </span>
         <%} else {%>
-            <h1>Página Inicial</h1>
-            <h3>Faça seu Login abaixo</h3>
-            <form>
-                <b>Login: </b><input type="text" name="username"/>
-                <input type="submit" name="logon"/> 
+        <h2 class="container-fluid">Página Inicial</h2>
+            <h4 class="container-fluid">Faça seu Login</h4>
+            <form class="row g-3">
+                <div class="col-auto">
+                    <b class="container-fluid">Login: </b>
+                </div>
+                <div class="col-auto">
+                    <input type="text" class="form-control" name="username" placeholder="Seu Login" aria-label="Seu Login" aria-describedby="basic-addon1">
+                </div>
+                  <div class="col-auto">
+                    <input class="btn btn-dark" type="submit" name="logon"/> 
+                  </div>
             </form>           
         <%}%>
     </body>

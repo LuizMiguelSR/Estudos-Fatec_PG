@@ -13,19 +13,38 @@ if(request.getParameter("logoff")!=null){
 %>
 
 <% if(session.getAttribute("username")!=null){%>
-<form>
-    <a href="index.jsp">PÁGINA INICIAL</a> |
-    <a href="about.jsp">ABOUT</a> |
-    <a href="loteria.jsp">DICAS PARA LOTERIA</a>
-    Bem vindo: <b><%= session.getAttribute("username")%></b>
-    <input type="submit" name="logoff" value="Sair"/>
-</form>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.jsp">Luiz Miguel APP</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="index.jsp">Página Inicial</a>
+        <a class="nav-link" href="about.jsp">About</a>
+        <a class="nav-link" href="loteria.jsp">Dicas para Loteria</a>
+        <a class="nav-link">Bem vindo: <b><%= session.getAttribute("username")%></b></a>
+        <form>
+            <input class="btn btn-light" type="submit" name="logoff" value="Sair"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav><br>
 <%}else{%>
-<form>
-    <a href="index.jsp">PÁGINA INICIAL</a> |
-    <a href="about.jsp">ABOUT</a>
-</form>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.jsp">Luiz Miguel APP</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="index.jsp">Página Inicial</a>
+        <a class="nav-link" href="about.jsp">About</a>
+      </div>
+    </div>
+  </div>
+</nav><br>
 <%}%>
-
-<hr/>
-<h1>Luiz Miguel APP</h1>
