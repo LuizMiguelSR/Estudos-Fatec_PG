@@ -21,10 +21,20 @@
             ArrayList lista = (ArrayList) session.getAttribute("arrayNaSessao");
             if (lista == null) {
                 lista = new ArrayList();
+                int [] num = new int[6];
                 for (int i = 0; i < 6; i++) {
                     int r = ((int)(Math.random()*100));
-                    lista.add(r);
+                    for (int j = 0; j < 6; j++) {
+                        if (r == num[j] && j != i){
+                            r = ((int)(Math.random()*100));
+                        } else {
+                            num[i] = r;
+                        }
+                    }                    
                 }
+                for (int i = 0; i < 6; i++) {
+                    lista.add(num[i]);
+                }              
                 session.setAttribute("arrayNaSessao", lista);
             }%>
             <div class="container-fluid">
