@@ -4,9 +4,9 @@
     Author     : rlarg
 --%>
 
-<%@page import="Demo.Database"%>
-<%@page import="Demo.Contato"%>
-<%@page import="Demo.Data"%>
+<%@page import="demo.Database"%>
+<%@page import="demo.Contato"%>
+<%@page import="demo.Data"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
     //Exemplo de declaração, instanciação e definição de um objeto
