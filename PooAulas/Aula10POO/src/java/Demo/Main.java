@@ -11,20 +11,17 @@ package Demo;
  */
 public class Main {
     public static void main(String[] args) {
+        //Exemplo de declaração, instanciação e definição de um objeto
+        Data hoje = new Data();
+        hoje.setAno(2022);
+        hoje.setMês(4);
+        hoje.setDia(25);
+        System.out.println("Hoje é dia "+hoje.getDia());
         
-        // Exemplo de declaração e instanciação de um objeto
-        Data hoje; // Declaração do objeto
-        hoje = new Data(); // Instanciação do objeto
-        
-        hoje.dia = 25;
-        hoje.mes = 4;
-        hoje.ano = 2022;
-        
-        Data amanha;
-        amanha = new Data();
-        amanha.dia = 26;
-        amanha.mes = 4;
-        amanha.ano = 2022;
-        System.out.println("Hoje é dia " + hoje.dia);
+        Data amanhã;
+        amanhã = new Data();
+        amanhã.setDia(26);
+        amanhã.setMês(4);
+        amanhã.setAno(2022);
     }
 }

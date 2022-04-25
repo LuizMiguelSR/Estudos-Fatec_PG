@@ -15,26 +15,53 @@ public class Data {
     /**
      * Atributo para armazenar o dia de uma data
      */
-    public int dia;
-    public int mes;
-    public int ano;
+    private int dia;
+    private int mês;
+    private int ano;
     
-    // Construtor
-    public Data(){
-        dia = 1; mes = 1; ano = 2000;
+    //Construtores
+    public Data(){//sem parâmetros
+        dia = 1; mês = 1; ano = 2000;
     }
-    
-    // Método de definição de atributos
-    public void setData(int d, int m, int a) {
-        dia = d;
-        mes = m;
-        ano = a;
+    public Data(int dia, int mês, int ano){//parametrizado
+        this.dia = dia; this.mês = mês; this.ano = ano;
     }
-    
-    // Método de retorno da data formatada
+    //Método de definição de atributos
+    public void setData(int dia, int mês, int ano){
+        if(mês>12) mês = 12;
+        this.dia = dia; this.mês = mês; this.ano = ano;
+    }
+    //Métodos de retorno da data formatada
     public String getData(){
-        return dia + "/" + mes + "/" + ano;
+        return dia+"/"+mês+"/"+ano;
     }
-    
-    
+    public String getAniversário(){
+        return dia+"/"+mês;
+    }
+
+    public int getDia() {
+        return dia;
+    }
+
+    public void setDia(int dia) {
+        this.dia = dia;
+    }
+
+    public int getMês() {
+        return mês;
+    }
+
+    public void setMês(int mês) {
+        if(mês<1) this.mês=1;
+        if(mês>12)this.mês=12;
+        this.mês = mês;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
 }
