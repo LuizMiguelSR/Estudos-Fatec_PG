@@ -26,6 +26,13 @@
         <h2>Nome: Luiz Miguel Santos Rodrigues</h2>
         <h2>RA: 1290482022031</h2>
         <table border="1">
+                <tr>
+                    <td><b>Dia Semana</b></td>
+                    <td><b>Nome</b></td>
+                    <td><b>Sigla</b></td>
+                    <td><b>Ementa</b></td>
+                    <td><b>Horário</b></td>
+                </tr>
                 <% for (Disciplina p: lista) {%>
                 <tr>
                     <td><b> <%= p.getDiaSemana() %> </b></td>
