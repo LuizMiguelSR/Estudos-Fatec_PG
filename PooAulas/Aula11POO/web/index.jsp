@@ -40,13 +40,13 @@
         <div>
             <table border="1">
                 <tr>
-                    <td>Nome</td>
-                    <td>Pai</td>
-                    <td>Avô Paterno</td>
-                    <td>Avó Paterna</td>
-                    <td>Mãe</td>
-                    <td>Avô Materno</td>
-                    <td>Avó Materna</td>
+                    <td><b>Nome</b></td>
+                    <td><b>Pai</b></td>
+                    <td><b>Avô Paterno</b></td>
+                    <td><b>Avó Paterna</b></td>
+                    <td><b>Mãe</b></td>
+                    <td><b>Avô Materno</b></td>
+                    <td><b>Avó Materna</b></td>
                 </tr>
                 <% for (Pessoa p: lista) {%>
                 <tr>
