@@ -59,6 +59,7 @@
   - [Aula 06 - Funções](/LPIV/Aula06_Funcoes/);
   - [Aula 07 - Classes](/LPIV/Aula07_Classes/);
   - [Prova 01](/LPIV/Prova1.php);
+  - [Aula 08 - Classes herança, GET e POST](/LPIV/Aula08_Heranca_GET_POST/);
 
   POO (Java Web)
 
@@ -69,4 +70,6 @@
   - [Aula 06 - JSP](/PooAulas/Aula06JSP/);
   - [Aula 07 - Jspf](/PooAulas/Aula07/web/) e [Tarefa 07](/PooAulas/Atividade07/web/);
   - [Aula 09 - ServletContext, HtppSession e HttpRequest](/PooAulas/Aula09/web/) e [Tarefa 09 - Controle de Sessão](/PooAulas/tarefa09/web/);
+  - [Aula 10 - POO Classes objetos e instâncias atributos e métodos](/PooAulas/AulaPoo10/) e [Tarefa 10 - Classe para manipular horários](/PooAulas/tarefa10);
+  - [Aula 11 - Implementação de entidades estruturais utilizando POO](/PooAulas/AulaPoo10/) e [Tarefa 11 - WebApp de lista de disciplinas](/PooAulas/Tarefa11/);
   
