@@ -26,7 +26,7 @@
         </div>
         
         <!-- Formulário de login -->
-        <form style="margin: 65px;" action="recebe.php" method="post">
+        <form style="margin: 65px;" method="post">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -38,5 +38,16 @@
             </div>
             <input type="submit" value="Logar">
         </form>
+        <?php
+            $email = $_POST["email"]; // Método POST
+            $senha = $_POST["senha"]; 
+
+            // Condicional para confirmar login e senha
+            if($email == "teste@gmail.com" && $senha == 0000){
+                include 'calculadora.php';
+            } else {
+                include 'erro.php';
+            }
+        ?>
     </body>
 </html>

@@ -7,6 +7,6 @@
     if($email == "teste@gmail.com" && $senha == 0000){
         include 'calculadora.php';
     } else {
-        include 'index.php';
+        include 'erro.php';
     }
 ?>
