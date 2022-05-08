@@ -8,60 +8,66 @@
 <body>
 
 	<!-- NavBar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Subtração</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="about.php">Sobre</a>
-                    </li>
-                </ul>
+    <div class="conteiner">
+        <div class="row">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Subtração</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="about.php">Sobre</a>
+                        </li>
+                    </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <br>
-        <br>
-
-        <!-- Título -->
-        <div>
-            <h3 style="margin-left: 65px; margin-right: 65px; margin-top: 65px; text-align: center;">SUBTRAINDO NÚMEROS</h3>
+            </nav>
         </div>
+    </div>
 
-        <!-- Resultado da Subtração utilizando classe e construtor -->
-        <?PHP 
-            class calculadora
+    <!-- Título -->
+    <div class="container mt-5">
+        <div class="row">
+            <h3 class="mt-5 text-center">SUBTRAINDO NÚMEROS</h3>
+        </div>
+    </div>
+
+    <!-- Resultado da Subtração utilizando classe e construtor -->
+    <?PHP 
+        class calculadora
+        {
+            public $valor1;
+            public $valor2;
+
+            function __construct($vl1, $vl2)
             {
-                public $valor1;
-                public $valor2;
-
-                function __construct($vl1, $vl2)
-                {
-                    $this -> valor1 = $vl1;
-                    $this -> valor2 = $vl2;
-                }
-                
-                public function subtracao()
-                {
-                    return $this -> valor1 - $this -> valor2;
-                }
-
+                $this -> valor1 = $vl1;
+                $this -> valor2 = $vl2;
             }
-            $vl1 = $_POST["valor1"];
-            $vl2 = $_POST["valor2"];
-            $calcular = new calculadora($vl1, $vl2);
-            echo "<p style='margin-left: 65px; margin-right: 65px; margin-top: 35px; text-align: center;'>Resultado da subtração entre ".$vl1." e ".$vl2." é igual a ".$calcular->subtracao()."</p>";
-        ?>
+                
+            public function subtrai()
+            {
+                return $this -> valor1 - $this -> valor2;
+            }
 
-        <!-- Voltar -->
-        <div>
-            <p style="margin-left: 65px; margin-right: 65px; margin-top: 10px; text-align: center;"><a href="calculadora.php">VOLTAR</a></p>
+        }
+        $vl1 = $_POST["valor1"];
+        $vl2 = $_POST["valor2"];
+        $calcular = new calculadora($vl1, $vl2);
+        echo "<p style='margin-left: 65px; margin-right: 65px; margin-top: 35px; text-align: center;'>Resultado da subtração entre ".$vl1." e ".$vl2." é igual a ".$calcular->subtrai()."</p>";
+    ?>
+
+    <!-- Voltar -->
+    <div class="conteirner">
+        <div class="row">
+            <p class="mt-3 text-center"><a href="calculadora.php">VOLTAR</a></p>
         </div>
+    </div>
 </body>
 </html>
