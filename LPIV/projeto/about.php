@@ -58,7 +58,7 @@
     <!-- Voltar -->
     <div class="conteirner">
         <div class="row">
-            <p class="mt-3 text-center"><a href="calculadora.php">VOLTAR</a></p>
+            <p class="mt-3 text-center"><a href="index.php">VOLTAR</a></p>
         </div>
     </div>
 </body>
