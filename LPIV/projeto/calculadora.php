@@ -9,7 +9,6 @@
         <title>Calculadora</title>
     </head>
     <body>
-
         <!-- NavBar -->
         <div class="container">
             <div class="row">
@@ -33,7 +32,6 @@
                 </nav>
             </div>
         </div>
-
         <!-- Mensagem de escolha de cálculo -->
         <div class="container mt-5">
             <div class="row">
@@ -45,14 +43,12 @@
                 </div>
             </div>
         </div>
-
         <!-- Título -->
         <div class="container">
             <div class="row">
                 <h3 class="mt-2 text-center">CALCULADORA</h3>
             </div>
         </div>
-
         <!-- Formulário de entrada de valores -->
         <div class="container">
             <div class="row">
