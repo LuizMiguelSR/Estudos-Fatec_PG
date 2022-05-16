@@ -21,7 +21,7 @@ public class user {
         Class.forName("org.sqlite.JDBC");
         String url = "jdbc:sqlite:mytasks.db";
         Connection con = DriverManager.getConnection(url);
-        PreparedStatement stmt = con.prepareCall(
+        PreparedStatement stmt = con.prepareStatement(
                 "select * from users where username = ? and pass_hash = ?"
         );
         stmt.setString(1, username);
