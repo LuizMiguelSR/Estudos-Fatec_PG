@@ -61,6 +61,7 @@
   - [Prova 01](/LPIV/Prova1.php);
   - [Aula 08 - Classes herança, GET e POST](/LPIV/Aula08_Heranca_GET_POST/);
   - [Aula 09 - Include, Require e BootStrap](/LPIV/Aula09/) e [Projeto utilizando o BootStrap](/LPIV/projeto/);
+  - [Aula 11 - Conexão com Banco de Dados MySQL](/LPIV/Aula10/) e [Projeto utilizando o BootStrap](/LPIV/projeto/);
 
   POO (Java Web)
 
@@ -73,4 +74,5 @@
   - [Aula 09 - ServletContext, HtppSession e HttpRequest](/PooAulas/Aula09/web/) e [Tarefa 09 - Controle de Sessão](/PooAulas/tarefa09/web/);
   - [Aula 10 - POO Classes objetos e instâncias atributos e métodos](/PooAulas/AulaPoo10/) e [Tarefa 10 - Classe para manipular horários](/PooAulas/tarefa10);
   - [Aula 11 - Implementação de entidades estruturais utilizando POO](/PooAulas/AulaPoo10/) e [Tarefa 11 - WebApp de lista de disciplinas](/PooAulas/Tarefa11/);
+  - [Aula 12 - SQLite demo consultas](/PooAulas/Aula12/) e [Tarefa 12 - trabalhando com Chinook list](/PooAulas/Tarefa12);
   
