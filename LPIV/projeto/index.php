@@ -40,9 +40,9 @@
         </div>
         
         <!-- Formulário de login -->
-        <div class="container ml-5 mt-2">
+        <div class="container sm ml-5 mt-2">
             <div class="row">
-                <form action="recebe.php" method="post">
+                <form action="valida.php" method="post">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email</label>
                         <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">

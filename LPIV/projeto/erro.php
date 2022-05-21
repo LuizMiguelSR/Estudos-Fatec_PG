@@ -52,7 +52,7 @@
         <!-- Formulário de login -->
         <div class="container">
             <div class="row">
-                <form action="recebe.php" method="post">
+                <form action="valida.php" method="post">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email</label>
                         <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
