@@ -15,5 +15,17 @@
             <file>file:/media/luiz/Disco%20Local/Meus_Documentos/ArquivosAcademicos/FATEC%20Praia%20Grande/ADS/Fatec/PooAulas/Aula13ContextListener/src/java/model/user.java</file>
             <file>file:/media/luiz/Disco%20Local/Meus_Documentos/ArquivosAcademicos/FATEC%20Praia%20Grande/ADS/Fatec/PooAulas/Aula13ContextListener/src/java/db/CreateListener.java</file>
         </group>
+        <group name="FatecPOO">
+            <file>file:/media/luiz/Disco%20Local/Meus_Documentos/ArquivosAcademicos/FATEC%20Praia%20Grande/ADS/Fatec/PooAulas/Aula13ContextListener/web/WEB-INF/jspf/header.jspf</file>
+            <file>file:/media/luiz/Disco%20Local/Meus_Documentos/ArquivosAcademicos/FATEC%20Praia%20Grande/ADS/Fatec/PooAulas/Aula13ContextListener/src/java/model/user.java</file>
+            <file>file:/media/luiz/Disco%20Local/Meus_Documentos/ArquivosAcademicos/FATEC%20Praia%20Grande/ADS/Fatec/PooAulas/Aula13ContextListener/web/index.jsp</file>
+            <file>file:/media/luiz/Disco%20Local/Meus_Documentos/ArquivosAcademicos/FATEC%20Praia%20Grande/ADS/Fatec/PooAulas/Aula13ContextListener/src/java/db/CreateListener.java</file>
+        </group>
+        <group name="FatecPoo">
+            <file>file:/media/luiz/Disco%20Local/Meus_Documentos/ArquivosAcademicos/FATEC%20Praia%20Grande/ADS/Fatec/PooAulas/Aula13ContextListener/web/WEB-INF/jspf/header.jspf</file>
+            <file>file:/media/luiz/Disco%20Local/Meus_Documentos/ArquivosAcademicos/FATEC%20Praia%20Grande/ADS/Fatec/PooAulas/Aula13ContextListener/src/java/model/user.java</file>
+            <file>file:/media/luiz/Disco%20Local/Meus_Documentos/ArquivosAcademicos/FATEC%20Praia%20Grande/ADS/Fatec/PooAulas/Aula13ContextListener/web/index.jsp</file>
+            <file>file:/media/luiz/Disco%20Local/Meus_Documentos/ArquivosAcademicos/FATEC%20Praia%20Grande/ADS/Fatec/PooAulas/Aula13ContextListener/src/java/db/CreateListener.java</file>
+        </group>
     </open-files>
 </project-private>
