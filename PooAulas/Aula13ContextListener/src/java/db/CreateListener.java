@@ -23,6 +23,7 @@ public class CreateListener implements ServletContextListener {
             String url = "jdbc:sqlite:mytasks.db";
             Connection con = DriverManager.getConnection(url);
             Statement stmt = con.createStatement();
+            //stmt.execute("drop table users");
             stmt.execute("create table IF NOT EXISTS users(\n" +
                         "    username varchar primary key, \n" +
                         "    pass_hash integer not null,\n" +
