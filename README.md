@@ -75,5 +75,6 @@
   - [Aula 10 - POO Classes objetos e instâncias atributos e métodos](/PooAulas/AulaPoo10/) e [Tarefa 10 - Classe para manipular horários](/PooAulas/tarefa10);
   - [Aula 11 - Implementação de entidades estruturais utilizando POO](/PooAulas/AulaPoo10/) e [Tarefa 11 - WebApp de lista de disciplinas](/PooAulas/Tarefa11/);
   - [Aula 12 - SQLite demo consultas](/PooAulas/Aula12/) e [Tarefa 12 - trabalhando com Chinook list](/PooAulas/Tarefa12);
-  - [Aula 13 - Criando um mecanismo de controle de acesso](/PooAulas/Aula13/);
+  - [Aula 13 - Criando um mecanismo de controle de acesso #01](/PooAulas/Aula13/);
+  - [Aula 14 - Criando um mecanismo de controle de acesso #02](/PooAulas/Aula13/);
   
