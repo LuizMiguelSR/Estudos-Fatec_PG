@@ -12,6 +12,28 @@
     ArrayList<User> users = new ArrayList<>();
     try{
         users = User.getAllUsers();
+        if(request.getParameter("user-add") != null){
+            String username = request.getParameter("username");
+            String name = request.getParameter("name");
+            String password = request.getParameter("password");
+            User user = new User(
+                username,
+                (username+password).hashCode(),
+                name
+            );
+            User.addUser(user);
+            response.sendRedirect(request.getRequestURI());
+        }else if(request.getParameter("user-delete") != null){
+            String username = request.getParameter("username");
+            User.deleteUser(username);
+            response.sendRedirect(request.getRequestURI());
+        }else if(request.getParameter("user-new-pass") != null){
+            String username = request.getParameter("username");
+            String newPassword = request.getParameter("newPassword");
+            User.changePassword
+            (username, (username+newPassword).hashCode());
+            response.sendRedirect(request.getRequestURI());
+        }
     }catch(Exception ex){
         usersException = ex;
     }
@@ -25,19 +47,6 @@
     <body>
         <%@include file="WEB-INF/jspf/header.jspf"%>
         <h2>Início</h2>
-        <form>
-            <fieldset>
-                <legend>Adicionar usuário</legend>
-                Username:<br/>
-                <input type="text" name="username"/><br/>
-                Nome:<br/>
-                <input type="text" name="name"/><br/>
-                Senha:<br/>
-                <input type="password" name="password"/><br/><br/>
-                <input type="submit" name="user-add" value="Adicionar"/>
-            </fieldset>
-        </form>
-        <h3>Lista de Usuários</h3>
         <%if(usersException != null){%>
         <div style="color: red">
             <%= usersException.getMessage() %>
@@ -46,12 +55,38 @@
         <%if(session.getAttribute("user")==null){%>
             Você deve fazer login para visualizar este conteúdo.
         <%}else{%>
-            <table>
-                <tr><th>Username</th><th>Name</th></tr>
+            <form>
+                <fieldset>
+                    <legend>Adicionar usuário</legend>
+                    Username:<br/>
+                    <input type="text" name="username"/><br/>
+                    Nome:<br/>
+                    <input type="text" name="name"/><br/>
+                    Senha:<br/>
+                    <input type="password" name="password"/><br/><br/>
+                    <input type="submit" name="user-add" value="Adicionar"/>
+                </fieldset>
+            </form>
+            <h3>Lista de Usuários</h3>
+            <table border="1">
+                <tr><th>Username</th><th>Name</th><th>Remover</th><th>Alterar</th></tr>
                 <%for(User u: users){%>
                 <tr>
                     <td><%= u.getUsername() %></td>
                     <td><%= u.getName() %></td>
+                    <td>
+                        <form>
+                            <input type="hidden" name="username" value="<%= u.getUsername() %>"/>
+                            <input type="submit" name="user-delete" value="remover"/>
+                        </form>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="hidden" name="username" value="<%= u.getUsername() %>"/>
+                            <input type="password" name="newPassword"/>
+                            <input type="submit" name="user-new-pass" value="Alterar senha"/>
+                        </form>
+                    </td>
                 </tr>
                 <%}%>
             </table>

@@ -16,6 +16,41 @@ public class User {
     private long passwordHash;
     private String name;
     
+    public static void addUser(User user) throws Exception{
+        Class.forName("org.sqlite.JDBC");
+        String url = "jdbc:sqlite:mytasks.db";
+        Connection con = DriverManager.getConnection(url);
+        PreparedStatement stmt = con.prepareStatement(""
+                        + "INSERT INTO users(username, name, pass_hash)"
+                        + "values(?,?,?)");
+        stmt.setString(1, user.getUsername());
+        stmt.setString(2, user.getName());
+        stmt.setLong(3, user.getPasswordHash());
+        stmt.execute();
+        stmt.close(); con.close();
+    }
+    
+    public static void deleteUser(String username) throws Exception{
+        Class.forName("org.sqlite.JDBC");
+        String url = "jdbc:sqlite:mytasks.db";
+        Connection con = DriverManager.getConnection(url);
+        PreparedStatement stmt = con.prepareStatement("DELETE FROM users WHERE username=?");
+        stmt.setString(1, username);
+        stmt.execute();
+        stmt.close(); con.close();
+    }
+    
+    public static void changePassword(String username, long passHash) throws Exception{
+        Class.forName("org.sqlite.JDBC");
+        String url = "jdbc:sqlite:mytasks.db";
+        Connection con = DriverManager.getConnection(url);
+        PreparedStatement stmt = con.prepareStatement("UPDATE users SET pass_hash=? WHERE username=?");
+        stmt.setLong(1, passHash);
+        stmt.setString(2, username);
+        stmt.execute();
+        stmt.close(); con.close();
+    }
+    
     public static User getUser(String username, String password) throws Exception{
         User user = null;
         Class.forName("org.sqlite.JDBC");
