@@ -40,7 +40,10 @@
                 <h3 class="mt-5 text-center">CADASTRO DE FUNCIONÁRIO</h3>
             </div>
         </div>
-        <!-- Formulário de entrada de valores -->
+        <!-- Formulário de entrada de valores
+            Formulário de entrada de valores correpondente ao registro de um novo
+            dentro de um sistema de folha de pagmento.
+        -->
         <div class="container mt-3">
             <form action="novo_user.php" method="post">
                 <div class="row">

@@ -68,9 +68,15 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- 
+                        Consulta dos valores no banco de dados 
+                        A seguir temos o uso da estrutura de controle foreach, para mostrar
+                        todos os registros do banco de dados compondo assim a folha de 
+                        pagamento.
+                    -->
                     <?php foreach($funcionarios as $func):?>
                             <tr>
-                                <td><?= $func["codigo"]?></td>
+                                <td><?= $func["cod"]?></td>
                                 <td><?= $func["nome"]?></td>
                                 <td><?= $func["salBase"]?></td>
                                 <td><?= $func["valeTransp"]?></td>

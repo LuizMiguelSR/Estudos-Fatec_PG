@@ -53,6 +53,12 @@
         </div>
         <div class="container">
             <table class="table table-hover table-dark">
+                <!-- 
+                        Consulta dos valores no banco de dados 
+                        A seguir temos o uso da estrutura de controle foreach, para percorrer
+                        todos os registros e de acordo com a sessão correpondente mostrar,
+                        o valor correpondente ao usuário logado.
+                -->
                 <thead>
                     <tr>
                         <th scope="col">Cód</th>
@@ -67,7 +73,7 @@
                 <tbody>
                     <?php foreach($funcionarios as $func):?>
                             <tr>
-                                <td><?= $func["codigo"]?></td>
+                                <td><?= $func["cod"]?></td>
                                 <td><?= $func["nome"]?></td>
                                 <td><?= $func["salBase"]?></td>
                                 <td><?= $func["valeTransp"]?></td>

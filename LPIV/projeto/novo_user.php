@@ -50,7 +50,12 @@
             $dias = $_POST['dias'];
             $dep = $_POST['dep'];
             
-
+            # Classe para calcular a folha de pagemnto:
+            /*
+                Nesta classe utiliza-se o construtor parametrizado, com valores públicos, de forma
+                que temos as funções de calculo do vale transporte, de calculo do inss, e do imposto 
+                de renda retido na fonte.
+            */
             class calculadoraFolha
             {
                 public $valor1;
@@ -113,6 +118,7 @@
             $vl1 = $dias;
             $vl2 = $salBase;
             $vl3 = $dep;
+            $vl4 = 0;
             $calcular = new calculadoraFolha($vl1, $vl2, $vl3, $vl4);
             $vl4 = $calcular->inss();
             $calcular = new calculadoraFolha($vl1, $vl2, $vl3, $vl4);
@@ -131,6 +137,10 @@
                 MYSQL_PASS
             );
 
+            /*
+                A seguir temos a inserção dos dados coletados, em uma variável, 
+                de forma que mediante o comando execute inserimos no banco de dados
+            */
             $sql = "INSERT INTO funcionarios VALUES(:codigo, :nome, :email, :senha, :salBase, :dias, :dep, :valeTransp, :irrf, :inss, :salLiq)";
             $stmt = $gestor->prepare($sql);
             $stmt -> execute(['codigo'=>$cod, 'nome'=>$nome, 'email'=>$email, 'senha'=>$senha, 'salBase'=>$salBase, 'dias'=>$dias, 'dep'=>$dep, 'valeTransp'=>$valeTransp, 'irrf'=>$irrf, 'inss'=>$inss, 'salLiq'=>$salLiq]);
