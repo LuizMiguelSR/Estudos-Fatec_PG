@@ -18,18 +18,19 @@
     // Condicional para confirmar login e senha
     if ($email == 'admin@email.com' && $senha === '1234'){
         include 'cadastroFunc.php';
-        $c=1;
+        $c++;
     } else {
         foreach($valida as $val) {
             if($email == $val["email"] && $senha === $val["senha"]){
                 include 'consultaHol.php';
-                $c=1;
+                $c++;
             } 
         }
     }
 
     if($c == 0){
         include 'erro.php';
+        $c=0;
     }
     
 ?>
