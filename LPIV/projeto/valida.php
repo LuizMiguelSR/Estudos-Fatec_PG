@@ -17,11 +17,17 @@
     $c=0;
     // Condicional para confirmar login e senha
     if ($email == 'admin@email.com' && $senha === '1234'){
+        session_start();
+        // Criamos as variáveis globais
+        $_SESSION['nome'] = "Administrador";
         include 'cadastroFunc.php';
         $c++;
     } else {
         foreach($valida as $val) {
             if($email == $val["email"] && $senha === $val["senha"]){
+                session_start();
+                // Criamos as variáveis globais
+                $_SESSION['nome'] = $val["nome"];
                 include 'consultaHol.php';
                 $c++;
             } 
