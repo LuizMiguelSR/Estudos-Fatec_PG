@@ -1,9 +1,14 @@
 <?php
+    /*
+        Página destinada a consulta da folha de pagamento de funcionários, apenas pela sessão do administrador
+        , de forma que é feita uma consulta a tabela funcionários no banco de dados 
+    */
     session_start();
     if($_SESSION['nome'] != 'Administrador') {
         include 'sair.php';
     } else {
 
+        // Presença de concatenação de strings
         require_once 'config.php';
         $gestor = new PDO(
             "mysql:host=".MYSQL_HOST.";".
@@ -15,6 +20,7 @@
         $dados = $gestor->query("Select * FROM funcionarios");
         $funcionarios = $dados->fetchAll(PDO::FETCH_ASSOC);
         
+        // Formatação de números double para moeda corrente.
         $formatter = new NumberFormatter('pt_BR',  NumberFormatter::CURRENCY);
 ?>
     <!DOCTYPE html>
@@ -28,7 +34,7 @@
             <title>Folha de Pagamento</title>
         </head>
         <body>
-            <!-- NavBar -->
+            <!-- NavBar utilizando o BootStrap -->
             <div class="container">
                 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
                     <div class="container-fluid">                
@@ -70,6 +76,7 @@
                             <th scope="col">IRRF</th>
                             <th scope="col">INSS</th>
                             <th scope="col">Sál. Líquido</th>
+                            <th scope="col">Deletar</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -88,6 +95,7 @@
                                     <td><?= $formatter->formatCurrency($func["irrf"], 'BRL')?></td>
                                     <td><?= $formatter->formatCurrency($func["inss"], 'BRL')?></td>
                                     <td><?= $formatter->formatCurrency($func["salLiq"], 'BRL')?></td>
+                                    <td><input class="btn btn-light" type="submit" name="<?= $func["nome"]?>" value="Deletar"></td>
                                 </tr>                            
                         <?php endforeach; ?>
                     </tbody>

@@ -1,4 +1,8 @@
 <?php
+    /*
+        Página destinada ao formulário de cadastro de funcionários dentro do sistema, apenas usuários na sessão de administrador
+        tem acesso a está página.
+    */
     session_start();
     if($_SESSION['nome'] != 'Administrador') {
         include 'sair.php';
@@ -15,7 +19,7 @@
             <title>Cadastro Funcionário</title>
         </head>
         <body>
-            <!-- NavBar -->
+            <!-- NavBar utilizando o BootStrap -->
             <div class="container">
                 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
                     <div class="container-fluid">                

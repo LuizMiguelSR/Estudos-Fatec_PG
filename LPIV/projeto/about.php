@@ -7,7 +7,7 @@
 </head>
 <body>
 
-	<!-- NavBar -->
+	<!-- NavBar utilizando o BootStrap -->
     <div class="conteiner">
         <div class="row">
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">

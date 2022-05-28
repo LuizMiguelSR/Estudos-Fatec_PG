@@ -1,9 +1,14 @@
 <?php
+    /*
+        Página destinada a consulta do holerite de um funcionário, de forma que é feita uma consulta a 
+        tabela funcionários no banco de dados 
+    */
     session_start();
     if($_SESSION['nome'] != $val["nome"]) {
         include 'sair.php';
     } else {
 
+        // Presença de concatenação de strings
         require_once 'config.php';
         $gestor = new PDO(
             "mysql:host=".MYSQL_HOST.";".
@@ -15,6 +20,7 @@
         $dados = $gestor->query("Select * FROM funcionarios");
         $funcionarios = $dados->fetchAll(PDO::FETCH_ASSOC);
         
+        // Formatação de números double para moeda corrente.
         $formatter = new NumberFormatter('pt_BR',  NumberFormatter::CURRENCY);
 ?>
     <!DOCTYPE html>
@@ -28,7 +34,7 @@
             <title>Consulta Holerite</title>
         </head>
         <body>
-            <!-- NavBar -->
+            <!-- NavBar utilizando o BootStrap -->
             <div class="container">
                 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
                     <div class="container-fluid">                
@@ -59,14 +65,13 @@
             <div class="container">
                 <table class="table table-hover table-dark">
                     <!-- 
-                            Consulta dos valores no banco de dados 
-                            A seguir temos o uso da estrutura de controle foreach, para percorrer
-                            todos os registros e de acordo com a sessão correpondente mostrar,
-                            o valor correpondente ao usuário logado.
+                        Consulta dos valores no banco de dados. 
+                        A seguir temos o uso da estrutura de controle foreach, para percorrer
+                        todos os registros e de acordo com a sessão correpondente mostrar,
+                        o valor correpondente ao usuário logado.
                     -->
                     <thead>
                         <tr>
-                            <th scope="col">Cód</th>
                             <th scope="col">Nome</th>
                             <th scope="col">Sál. Base</th>
                             <th scope="col">V.T</th>
@@ -76,11 +81,14 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <!--
+                            Presença do foreach e uma estrutura if para filtral o holerite do funcionário de acordo 
+                            com a sessão logada.
+                        -->
                         <?php foreach($funcionarios as $func):
                             if ($_SESSION['nome'] == $func['nome'] ){
                             ?>
                                 <tr>
-                                    <td><?= $func["codigo"]?></td>
                                     <td><?= $func["nome"]?></td>
                                     <td><?= $formatter->formatCurrency($func["salBase"], 'BRL')?></td>
                                     <td><?= $formatter->formatCurrency($func["valeTransp"], 'BRL')?></td>

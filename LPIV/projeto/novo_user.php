@@ -1,4 +1,10 @@
 <?php
+    /*
+        Nesta página temos a abertura da sessão, de forma que apenas o administrador logado na sessão tenha acesso,
+        logo abaixo temos o recebimento dos valores do formulário e o uso de classes, metódos, passagem de parâmetros, 
+        funções e envio de dados ao banco de dados.
+    */
+
     session_start();
     if($_SESSION['nome'] != 'Administrador') {
         include 'sair.php';
@@ -18,7 +24,7 @@
             <!-- BootStrap JS -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-            <!-- NavBar -->
+            <!-- NavBar utilizando o BootStrap -->
             <div class="container">
                 <div class="row">
                     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -46,7 +52,8 @@
             </div>
             <br>
             <?php
-                # Primeiro testar se for realizado um POST indica que o botão de inclusão foi pressionado
+                # Primeiro testar se for realizado um POST indica que o botão de inclusão foi pressionado, e os valores enviados do
+                # formulário armazenados em variáveis do tipo string e double.
                 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                     die('Acesso inválido');
                 }
@@ -71,7 +78,8 @@
                     public $valor2;
                     public $valor3;
                     public $valor4;
-
+                    
+                    // Construtor com passagem de parâmetros
                     function __construct($vl1, $vl2, $vl3, $vl4)
                     {
                         $this -> valor1 = $vl1;
@@ -89,18 +97,30 @@
                             return $vt;
                         }
                     }
+
+                    // Uso do swicth case na função inss para determinar a contribuição ao inss
                     public function inss()
                     {   
-                        if($this -> valor2 > 6433.57){
-                            return 900.70;
-                        } else if ($this -> valor2 > 3305.23){
-                            return $this -> valor2 * 0.14;
-                        } else if ($this -> valor2 > 2203.49){
-                            return $this -> valor2 * 0.12;
-                        } else if ($this -> valor2  > 1100.01){
-                            return $this -> valor2 * 0.09;
-                        } else {
-                            return $this -> valor2 * 0.075;
+                        switch ($this -> valor2) {
+                            case $this -> valor2 > 6433.57:
+                                return 900.70;
+                                break;
+                            
+                            case $this -> valor2 > 3305.23:
+                                return $this -> valor2 * 0.14;
+                                break;
+                            
+                            case $this -> valor2 > 2203.49:
+                                return $this -> valor2 * 0.12;
+                                break;
+                            
+                            case $this -> valor2 > 1100.01:
+                                return $this -> valor2 * 0.09;
+                                break;
+
+                            default:
+                                return $this -> valor2 * 0.075;
+                                break;
                         }
                     }
                     public function irrf()
@@ -109,6 +129,7 @@
                         $baseCalc = $this -> valor2 - $this -> valor4 - ($this -> valor3 * 189.59);
 
                         // Valor de dedução levando em conta a tabela de dedução do imposto de renda retido na fonte
+                        // Presença de estruturas condicionais If, else e else if
                         if ($baseCalc > 4664.68) {
                             return ($baseCalc * 0.275) - 869.36;
                         } else if ($baseCalc > 3751.06) {
@@ -152,6 +173,8 @@
                 */
                 $sql = "INSERT INTO funcionarios VALUES(:codigo, :nome, :email, :senha, :salBase, :dias, :dep, :valeTransp, :irrf, :inss, :salLiq)";
                 $stmt = $gestor->prepare($sql);
+
+                // Função execute com a presença de arrays associativos
                 $stmt -> execute(['codigo'=>$cod, 'nome'=>$nome, 'email'=>$email, 'senha'=>$senha, 'salBase'=>$salBase, 'dias'=>$dias, 'dep'=>$dep, 'valeTransp'=>$valeTransp, 'irrf'=>$irrf, 'inss'=>$inss, 'salLiq'=>$salLiq]);
 
                 echo '<div class="container mt-5>"';

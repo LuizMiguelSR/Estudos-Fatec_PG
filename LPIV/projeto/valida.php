@@ -1,6 +1,10 @@
 
 <?php
-
+    /*
+        Página de validação do login e senha, que recebe os valores do formulário e busca no banco de dados os usuários registrados
+        para mostrar seu holerite ou identifica um administrador do sistema para cadastrar novos funcionários ou consultar
+        a folha de pagamento de todos os funcionários
+    */
     require_once 'config.php';
     $gestor = new PDO(
         "mysql:host=".MYSQL_HOST.";".
