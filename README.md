@@ -62,6 +62,7 @@
   - [Aula 08 - Classes herança, GET e POST](/LPIV/Aula08_Heranca_GET_POST/);
   - [Aula 09 - Include, Require e BootStrap](/LPIV/Aula09/) e [Projeto utilizando o BootStrap](/LPIV/projeto/);
   - [Aula 11 - Conexão com Banco de Dados MySQL](/LPIV/Aula10/) e [Projeto utilizando o BootStrap](/LPIV/projeto/);
+  - [Aula 12 - Sessions](/LPIV/Aula12-Sessions/) e [Projeto utilizando o BootStrap](/LPIV/projeto/);
 
   POO (Java Web)
 
