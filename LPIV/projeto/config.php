@@ -1,6 +1,6 @@
 <?php 
     /*
-        Página de configurações do servidor de banco de dados
+        Página de configurações do servidor de banco de dados.
     */
     define('MYSQL_HOST','localhost');
     define('MYSQL_DATABASE','bancoprojeto2');

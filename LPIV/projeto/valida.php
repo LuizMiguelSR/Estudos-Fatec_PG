@@ -1,4 +1,3 @@
-
 <?php
     /*
         Página de validação do login e senha, que recebe os valores do formulário e busca no banco de dados os usuários registrados
@@ -25,6 +24,7 @@
         // Criamos as variáveis globais
         $_SESSION['nome'] = "Administrador";
         include 'cadastroFunc.php';
+        // Operador de incremento para autenticar o usuário
         $c++;
     } else {
         foreach($valida as $val) {
@@ -33,6 +33,7 @@
                 // Criamos as variáveis globais
                 $_SESSION['nome'] = $val["nome"];
                 include 'consultaHol.php';
+                // Operador de incremento para autenticar o usuário
                 $c++;
             } 
         }

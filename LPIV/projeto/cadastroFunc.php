@@ -62,35 +62,35 @@
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label for="inputNome">Nome</label>
-                            <input name="nome" type="text" class="form-control" id="inputNome" placeholder="Nome">
+                            <input name="nome" type="text" class="form-control" id="inputNome" placeholder="Nome" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputCod">Código</label>
-                            <input name="cod" type="number" class="form-control" id="inputCod" placeholder="Código">
+                            <input name="cod" type="number" class="form-control" id="inputCod" placeholder="Código" required>
                         </div>
                     </div>
                     <div class="row mt-2">
                         <div class="form-group col-md-6">
                             <label for="inputEmail">Email</label>
-                            <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputPassword">Senha</label>
-                            <input name="senha" type="password" class="form-control" id="inputSenha" placeholder="Senha">
+                            <input name="senha" type="password" class="form-control" id="inputSenha" placeholder="Senha" required>
                         </div>
                     </div>
                     <div class="row mt-2">
                         <div class="form-group col-md-4">
                             <label for="inputSalBase">Salário Base</label>
-                            <input name="salBase" type="number" class="form-control" id="inputSalBase" placeholder=" Ex. R$ 1200,00">
+                            <input name="salBase" type="number" class="form-control" id="inputSalBase" placeholder=" Ex. R$ 1200,00" required>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inputDias">Dias trabalhados</label>
-                            <input name="dias" type="number" class="form-control" id="inputDias" placeholder="Ex. 22 dias">
+                            <input name="dias" type="number" class="form-control" id="inputDias" placeholder="Ex. 22 dias" required>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inputDep">Número de Dependentes</label>
-                            <input name="dep" type="number" class="form-control" id="inputDep" placeholder="Ex. 2 dependentes">
+                            <input name="dep" type="number" class="form-control" id="inputDep" placeholder="Ex. 2 dependentes" required>
                         </div>
                     </div>
                     <div class="row mt-3">

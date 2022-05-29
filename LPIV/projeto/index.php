@@ -46,17 +46,16 @@
                 <form action="valida.php" method="post">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                         <div id="emailHelp" class="form-text">Digite um email válido.</div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Senha</label>
-                        <input name="senha" type="password" class="form-control" id="exampleInputPassword1">
+                        <input name="senha" type="password" class="form-control" id="exampleInputPassword1" required>
                     </div>
                     <input class="btn btn-dark" type="submit" value="Logar">
                 </form>
             </div>
         </div>
-
     </body>
 </html>

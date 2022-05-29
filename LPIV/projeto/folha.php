@@ -8,7 +8,7 @@
         include 'sair.php';
     } else {
 
-        // Presença de concatenação de strings
+        // Presença de concatenação de strings dentro da variável gestor.
         require_once 'config.php';
         $gestor = new PDO(
             "mysql:host=".MYSQL_HOST.";".
@@ -81,13 +81,13 @@
                     </thead>
                     <tbody>
                         <!-- 
-                            Consulta dos valores no banco de dados 
+                            ==* Consulta dos valores no banco de dados *==
                             A seguir temos o uso da estrutura de controle foreach, para mostrar
                             todos os registros do banco de dados compondo assim a folha de 
-                            pagamento.
+                            pagamento. E botão de exclusão de um funcionário da folha de pagamento.
                         -->
                         <?php foreach($funcionarios as $func):?>
-                                <tr>
+                                <tr>                                    
                                     <td><?= $func["codigo"]?></td>
                                     <td><?= $func["nome"]?></td>
                                     <td><?= $formatter->formatCurrency($func["salBase"], 'BRL')?></td>
@@ -95,7 +95,12 @@
                                     <td><?= $formatter->formatCurrency($func["irrf"], 'BRL')?></td>
                                     <td><?= $formatter->formatCurrency($func["inss"], 'BRL')?></td>
                                     <td><?= $formatter->formatCurrency($func["salLiq"], 'BRL')?></td>
-                                    <td><input class="btn btn-light" type="submit" name="<?= $func["nome"]?>" value="Deletar"></td>
+                                    <td>
+                                        <form action="deleta.php" method="post">
+                                            <input type="hidden" name="deletar" value=<?= $func["codigo"]?>>
+                                            <input class="btn btn-light" type="submit" value="Deletar">
+                                        </form>
+                                    </td>                                    
                                 </tr>                            
                         <?php endforeach; ?>
                     </tbody>
