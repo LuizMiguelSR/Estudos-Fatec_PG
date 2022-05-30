@@ -12,7 +12,9 @@
     Exception tasksException = null;
     ArrayList<Task> tasks = new ArrayList<>();
     try{
-        tasks = Task.getUserTasks(sessionUser.getUsername());
+        if(sessionUser!=null){
+            tasks = Task.getUserTasks(sessionUser.getUsername());
+        }
         if(request.getParameter("task-add")!=null){
             String username = sessionUser.getUsername();
             String title = request.getParameter("title");
