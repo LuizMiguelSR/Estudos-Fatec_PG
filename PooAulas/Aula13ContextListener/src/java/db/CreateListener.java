@@ -9,9 +9,8 @@ import javax.servlet.ServletContextListener;
 import java.sql.*;
 
 /**
- * Web application lifecycle listener.
  *
- * @author rlarg
+ * @author Luiz
  */
 public class CreateListener implements ServletContextListener {
     public static Exception exception = null;
@@ -33,6 +32,12 @@ public class CreateListener implements ServletContextListener {
                     + "('admin',20761617,'Administrador')");
             stmt.execute("insert OR IGNORE into users values"
                     + "('fulano',-1196589817,'Fulano da Silva')");
+            
+            stmt.execute("create table IF NOT EXISTS tasks(\n" +
+                        "    id INTEGER PRIMARY KEY AUTOINCREMENT, \n" +
+                        "    username varchar not null, \n" +
+                        "    title varchar not null\n" +
+                        ")");
             stmt.close();
             con.close();
         }catch(Exception ex){

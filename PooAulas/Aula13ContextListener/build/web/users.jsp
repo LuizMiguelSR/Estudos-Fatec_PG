@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
     Created on : 16 de mai. de 2022, 13:38:16
-    Author     : Fatec
+    Author     : Luiz
 --%>
 
 <%@page import="model.User"%>
@@ -12,22 +12,22 @@
     ArrayList<User> users = new ArrayList<>();
     try{
         users = User.getAllUsers();
-        if(request.getParameter("user-add") != null){
+        if(request.getParameter("user-add")!=null){
             String username = request.getParameter("username");
             String name = request.getParameter("name");
             String password = request.getParameter("password");
             User user = new User(
-                username,
-                (username+password).hashCode(),
+                username, 
+                (username+password).hashCode(), 
                 name
             );
             User.addUser(user);
             response.sendRedirect(request.getRequestURI());
-        }else if(request.getParameter("user-delete") != null){
+        }else if(request.getParameter("user-delete")!=null){
             String username = request.getParameter("username");
             User.deleteUser(username);
             response.sendRedirect(request.getRequestURI());
-        }else if(request.getParameter("user-new-pass") != null){
+        }else if(request.getParameter("user-new-pass")!=null){
             String username = request.getParameter("username");
             String newPassword = request.getParameter("newPassword");
             User.changePassword
@@ -47,6 +47,7 @@
     <body>
         <%@include file="WEB-INF/jspf/header.jspf"%>
         <h2>Início</h2>
+        <h3>Lista de Usuários</h3>
         <%if(usersException != null){%>
         <div style="color: red">
             <%= usersException.getMessage() %>
@@ -67,7 +68,7 @@
                     <input type="submit" name="user-add" value="Adicionar"/>
                 </fieldset>
             </form>
-            <h3>Lista de Usuários</h3>
+            <hr/>
             <table border="1">
                 <tr><th>Username</th><th>Name</th><th>Remover</th><th>Alterar</th></tr>
                 <%for(User u: users){%>
@@ -76,15 +77,19 @@
                     <td><%= u.getName() %></td>
                     <td>
                         <form>
-                            <input type="hidden" name="username" value="<%= u.getUsername() %>"/>
-                            <input type="submit" name="user-delete" value="remover"/>
+                            <input type="hidden" name="username" 
+                                   value="<%= u.getUsername() %>"/>
+                            <input type="submit" name="user-delete" 
+                                   value="Remover"/>
                         </form>
                     </td>
                     <td>
                         <form>
-                            <input type="hidden" name="username" value="<%= u.getUsername() %>"/>
+                            <input type="hidden" name="username" 
+                                   value="<%= u.getUsername() %>"/>
                             <input type="password" name="newPassword"/>
-                            <input type="submit" name="user-new-pass" value="Alterar senha"/>
+                            <input type="submit" name="user-new-pass"
+                                   value="Alterar senha"/>
                         </form>
                     </td>
                 </tr>

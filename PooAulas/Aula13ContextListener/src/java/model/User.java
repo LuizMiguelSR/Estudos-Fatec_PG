@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author rlarg
+ * @author Luiz
  */
 public class User {
     private String username;
@@ -21,8 +21,8 @@ public class User {
         String url = "jdbc:sqlite:mytasks.db";
         Connection con = DriverManager.getConnection(url);
         PreparedStatement stmt = con.prepareStatement(""
-                        + "INSERT INTO users(username, name, pass_hash)"
-                        + "values(?,?,?)");
+                + "INSERT INTO users(username, name, pass_hash)"
+                + "values(?,?,?)");
         stmt.setString(1, user.getUsername());
         stmt.setString(2, user.getName());
         stmt.setLong(3, user.getPasswordHash());
@@ -34,7 +34,8 @@ public class User {
         Class.forName("org.sqlite.JDBC");
         String url = "jdbc:sqlite:mytasks.db";
         Connection con = DriverManager.getConnection(url);
-        PreparedStatement stmt = con.prepareStatement("DELETE FROM users WHERE username=?");
+        PreparedStatement stmt = con.prepareStatement
+        ("DELETE FROM users WHERE username=?");
         stmt.setString(1, username);
         stmt.execute();
         stmt.close(); con.close();
@@ -44,7 +45,8 @@ public class User {
         Class.forName("org.sqlite.JDBC");
         String url = "jdbc:sqlite:mytasks.db";
         Connection con = DriverManager.getConnection(url);
-        PreparedStatement stmt = con.prepareStatement("UPDATE users SET pass_hash=? WHERE username=?");
+        PreparedStatement stmt = con.prepareStatement
+        ("UPDATE users SET pass_hash=? WHERE username=?");
         stmt.setLong(1, passHash);
         stmt.setString(2, username);
         stmt.execute();

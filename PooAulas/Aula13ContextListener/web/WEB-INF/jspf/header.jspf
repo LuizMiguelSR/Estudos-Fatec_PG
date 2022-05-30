@@ -49,6 +49,8 @@
     <form method="post">
         <a href="index.jsp">INDEX</a> |
         <a href="users.jsp">USERS</a> |
+        <a href="tasks.jsp">TAREFAS</a> |
+        <a href="my-tasks.jsp">MINHAS TAREFAS</a> |
         Bem vindo, <%= ((User)session.getAttribute("user")).getName() %>
         <input type="submit" name="logout" value="Sair"/>
     </form>
