@@ -21,8 +21,12 @@
             <file>file:/media/luiz/Disco%20Local/Meus_Documentos/ArquivosAcademicos/FATEC%20Praia%20Grande/ADS/Fatec/PooAulas/Aula13ContextListener/web/index.jsp</file>
             <file>file:/media/luiz/Disco%20Local/Meus_Documentos/ArquivosAcademicos/FATEC%20Praia%20Grande/ADS/Fatec/PooAulas/Aula13ContextListener/src/java/db/CreateListener.java</file>
         </group>
+<<<<<<< Updated upstream
         <group name="FatecPoo">
             <file>file:/mnt/Arquivos/Meus_Documentos/ArquivosAcademicos/FATEC%20Praia%20Grande/ADS/Fatec/PooAulas/Aula13ContextListener/web/index.jsp</file>
         </group>
+=======
+        <group name="FatecPoo"/>
+>>>>>>> Stashed changes
     </open-files>
 </project-private>
