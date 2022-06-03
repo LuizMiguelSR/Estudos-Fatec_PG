@@ -21,7 +21,7 @@
         $funcionarios = $dados->fetchAll(PDO::FETCH_ASSOC);
         
         // Formatação de números double para moeda corrente.
-        $formatter = new NumberFormatter('pt_BR',  NumberFormatter::CURRENCY);
+        //$formatter = new NumberFormatter('pt_BR',  NumberFormatter::CURRENCY);
 ?>
     <!DOCTYPE html>
     <html lang="pt-br">
@@ -87,14 +87,15 @@
                             pagamento. E botão de exclusão de um funcionário da folha de pagamento.
                         -->
                         <?php foreach($funcionarios as $func):?>
-                                <tr>                                    
+                                <tr>
+                                    <!-- Utilização do number format para formatar números em formato da moeda local -->                                    
                                     <td><?= $func["codigo"]?></td>
                                     <td><?= $func["nome"]?></td>
-                                    <td><?= $formatter->formatCurrency($func["salBase"], 'BRL')?></td>
-                                    <td><?= $formatter->formatCurrency($func["valeTransp"], 'BRL')?></td>
-                                    <td><?= $formatter->formatCurrency($func["irrf"], 'BRL')?></td>
-                                    <td><?= $formatter->formatCurrency($func["inss"], 'BRL')?></td>
-                                    <td><?= $formatter->formatCurrency($func["salLiq"], 'BRL')?></td>
+                                    <td>R$ <?= number_format($func["valeTransp"], 2, ',', '.') ?></td>
+                                    <td>R$ <?= number_format($func["salBase"], 2, ',', '.') ?></td>
+                                    <td>R$ <?= number_format($func["irrf"], 2, ',', '.') ?></td>
+                                    <td>R$ <?= number_format($func["inss"], 2, ',', '.') ?></td>
+                                    <td>R$ <?= number_format($func["salLiq"], 2, ',', '.') ?></td>
                                     <td>
                                         <form action="deleta.php" method="post">
                                             <input type="hidden" name="deletar" value=<?= $func["codigo"]?>>

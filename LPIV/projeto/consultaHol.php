@@ -3,7 +3,7 @@
         Página destinada a consulta do holerite de um funcionário, de forma que é feita uma consulta a 
         tabela funcionários no banco de dados 
     */
-    session_start();
+
     if($_SESSION['nome'] != $val["nome"]) {
         include 'sair.php';
     } else {
@@ -20,8 +20,6 @@
         $dados = $gestor->query("Select * FROM funcionarios");
         $funcionarios = $dados->fetchAll(PDO::FETCH_ASSOC);
         
-        // Formatação de números double para moeda corrente.
-        $formatter = new NumberFormatter('pt_BR',  NumberFormatter::CURRENCY);
 ?>
     <!DOCTYPE html>
     <html lang="pt-br">
@@ -82,19 +80,20 @@
                     </thead>
                     <tbody>
                         <!--
-                            Presença do foreach e uma estrutura if para filtral o holerite do funcionário de acordo 
+                            Presença do foreach e uma estrutura if para filtrar o holerite do funcionário de acordo 
                             com a sessão logada.
                         -->
                         <?php foreach($funcionarios as $func):
                             if ($_SESSION['nome'] == $func['nome'] ){
                             ?>
                                 <tr>
+                                    <!-- Utilização do number format para formatar números em formato da moeda local -->
                                     <td><?= $func["nome"]?></td>
-                                    <td><?= $formatter->formatCurrency($func["salBase"], 'BRL')?></td>
-                                    <td><?= $formatter->formatCurrency($func["valeTransp"], 'BRL')?></td>
-                                    <td><?= $formatter->formatCurrency($func["irrf"], 'BRL')?></td>
-                                    <td><?= $formatter->formatCurrency($func["inss"], 'BRL')?></td>
-                                    <td><?= $formatter->formatCurrency($func["salLiq"], 'BRL')?></td>
+                                    <td>R$ <?= number_format($func["salBase"], 2, ',', '.') ?></td>
+                                    <td>R$ <?= number_format($func["valeTransp"], 2, ',', '.') ?></td>
+                                    <td>R$ <?= number_format($func["irrf"], 2, ',', '.') ?></td>
+                                    <td>R$ <?= number_format($func["inss"], 2, ',', '.') ?></td>
+                                    <td>R$ <?= number_format($func["salLiq"], 2, ',', '.') ?></td>
                                 </tr>
                         <?php } endforeach; ?>
                     </tbody>
