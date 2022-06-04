@@ -19,9 +19,6 @@
         
         $dados = $gestor->query("Select * FROM funcionarios");
         $funcionarios = $dados->fetchAll(PDO::FETCH_ASSOC);
-        
-        // Formatação de números double para moeda corrente.
-        //$formatter = new NumberFormatter('pt_BR',  NumberFormatter::CURRENCY);
 ?>
     <!DOCTYPE html>
     <html lang="pt-br">
@@ -91,8 +88,8 @@
                                     <!-- Utilização do number format para formatar números em formato da moeda local -->                                    
                                     <td><?= $func["codigo"]?></td>
                                     <td><?= $func["nome"]?></td>
-                                    <td>R$ <?= number_format($func["valeTransp"], 2, ',', '.') ?></td>
                                     <td>R$ <?= number_format($func["salBase"], 2, ',', '.') ?></td>
+                                    <td>R$ <?= number_format($func["valeTransp"], 2, ',', '.') ?></td>
                                     <td>R$ <?= number_format($func["irrf"], 2, ',', '.') ?></td>
                                     <td>R$ <?= number_format($func["inss"], 2, ',', '.') ?></td>
                                     <td>R$ <?= number_format($func["salLiq"], 2, ',', '.') ?></td>
