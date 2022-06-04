@@ -31,7 +31,7 @@
         </div><hr/>
         <%}%>
         <h3>
-            Uuários: 
+            Usuários: 
             <a href="users.jsp">
                 <%= (usersCount>-1) ? usersCount : '-' %>
             </a>
