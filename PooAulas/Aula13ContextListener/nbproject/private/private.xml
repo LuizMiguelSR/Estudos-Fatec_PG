@@ -5,6 +5,8 @@
         <group name="Rascunhos">
             <file>file:/mnt/Arquivos/Meus_Documentos/ArquivosAcademicos/FATEC%20Praia%20Grande/ADS/Fatec/PooAulas/Aula13ContextListener/web/index.jsp</file>
         </group>
-        <group name="FatecPoo"/>
+        <group name="FatecPoo">
+            <file>file:/C:/Users/Luiz/Documents/NetBeansProjects/Fatec/PooAulas/Aula13ContextListener/src/java/db/ContextListener.java</file>
+        </group>
     </open-files>
 </project-private>
