@@ -46,3 +46,4 @@ hs_err_pid*
 *.properties
 PooAulas/Aula13ContextListener/nbproject/private/private.properties
 PooAulas/Aula13ContextListener/nbproject/private/private.xml
+/PooAulas/Aula12/dist/

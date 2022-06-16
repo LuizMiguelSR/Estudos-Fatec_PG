@@ -18,7 +18,7 @@ public class Artist {
         Class.forName("org.sqlite.JDBC");
         //O caminho do arquivo deve ser diferente se executado do seu PC
         //https://www.sqlitetutorial.net/sqlite-sample-database/
-        String url = "jdbc:sqlite:/home/luizm/Documentos/chinook.db";
+        String url = "jdbc:sqlite:C:\\Users\\Luiz Miguel\\Documents\\chinook.db";
         Connection con = DriverManager.getConnection(url);
         Statement stmt = con.createStatement();
         ResultSet rs = stmt.executeQuery("select count(*) as count from artists");
@@ -37,7 +37,7 @@ public class Artist {
         Class.forName("org.sqlite.JDBC");
         //O caminho do arquivo deve ser diferente se executado do seu PC
         //https://www.sqlitetutorial.net/sqlite-sample-database/
-        String url = "jdbc:sqlite:/home/luizm/Documentos/chinook.db";
+        String url = "jdbc:sqlite:C:\\Users\\Luiz Miguel\\Documents\\chinook.db";
         Connection con = DriverManager.getConnection(url);
         Statement stmt = con.createStatement();
         ResultSet rs = stmt.executeQuery("select * from artists order by name");
