@@ -1,8 +1,8 @@
 # 📚Fatec Análise e Desenvolvimento de Sistemas 📚
 
-## **Repositório exclusivo para códigos desenvolvidos em sala de aula**
+Repositório exclusivo para códigos desenvolvidos em sala de aula
 
-- ### **1º Semestre**
+- ## **1º Semestre**
 
   <details>
   <summary> Programação em Microinformática (HTNL5/CSS e JavaScript) </summary>
@@ -16,7 +16,7 @@
   - [Aula 10](https://github.com/LuizMiguelSR/Fatec/tree/master/1SEM/Programa%C3%A7%C3%A3o%20em%20Microinformatica/Aula%2010).
   </details>
 
-- ### **2º Semestre**
+- ## **2º Semestre**
 
   <details>
   <summary> Estrutura de Dados (C++) </summary>
@@ -54,7 +54,7 @@
   - [Aula 12 - SubProgramas pt. 2](/2SEM/LPJava/Aula12_SubProgramasParte2/);
   </details>
 
-- ### **4º Semestre**
+- ## **4º Semestre**
 
   <details>
   <summary> Linguagem de Programação IV (PHP) </summary>
