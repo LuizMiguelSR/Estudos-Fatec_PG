@@ -10,12 +10,13 @@
 
         // Presença de concatenação de strings dentro da variável gestor.
         require_once 'config.php';
-        $gestor = new PDO(
-            "mysql:host=".MYSQL_HOST.";".
-            "dbname=".MYSQL_DATABASE.";charset=utf8",
-            MYSQL_USER,
-            MYSQL_PASS
-        );
+        try {
+            $gestor = new PDO("mysql:host=".MYSQL_HOST.";"."dbname=".MYSQL_DATABASE.";charset=utf8",MYSQL_USER,MYSQL_PASS);
+            $gestor->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            echo "Connected successfully";
+        } catch(PDOException $e) {    
+            echo "Connection failed: " . $e->getMessage();
+        }
         
         $dados = $gestor->query("Select * FROM funcionarios");
         $funcionarios = $dados->fetchAll(PDO::FETCH_ASSOC);
