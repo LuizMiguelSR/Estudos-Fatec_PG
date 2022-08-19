@@ -88,4 +88,11 @@ Repositório exclusivo para códigos desenvolvidos em sala de aula
   - [Aula 13 - Criando um mecanismo de controle de acesso #01](/PooAulas/Aula13/);
   - [Aula 14 - Criando um mecanismo de controle de acesso #02](/PooAulas/Aula13/);
   </details>
+
+- ## **5º Semestre**
   
+  <details>
+  <summary> Programação em Dispositivos Móveis </summary>
+  
+  - [Aula 02 - Ambiente e Hello World](/ProgDispMoveis/expo/meuAppExpo/App.js);
+  </details>

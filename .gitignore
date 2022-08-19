@@ -47,3 +47,18 @@ hs_err_pid*
 PooAulas/Aula13ContextListener/nbproject/private/private.properties
 PooAulas/Aula13ContextListener/nbproject/private/private.xml
 /PooAulas/Aula12/dist/
+
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# macOS
+.DS_Store
