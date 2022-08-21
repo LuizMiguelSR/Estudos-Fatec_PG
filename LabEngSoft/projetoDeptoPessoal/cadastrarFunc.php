@@ -47,8 +47,8 @@
                         <input type="email" placeholder="Ex. seunome@email.com" class="form-control" id="email" required>
                     </div>
                     <div class="col-md-4">
-                        <label for="inputPassword4" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="senha" required>
+                        <label for="inputTelefone" class="form-label">Telefone</label>
+                        <input type="number" class="form-control" id="telefone" required>
                     </div>
                     <div class="col-md-4">
                         <label for="cep" class="form-label">CEP</label>
@@ -86,6 +86,14 @@
                         <label for="departamento" class="form-label">Departamento</label>
                         <input type="number" placeholder="Ex. Vendas" class="form-control" id="departamento">
                     </div>
+                    <div class="col-4">
+                        <label for="cargo" class="form-label">Cargo</label>
+                        <input type="text" placeholder="Ex. Gerente" class="form-control" id="cargo">
+                    </div>
+                    <div class="col-4">
+                        <label for="senha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senha">
+                    </div>
                     <div class="col-12 mt-5">
                         <button type="submit" class="btn btn-primary">CADASTRAR</button>
                     </div>
@@ -98,9 +106,22 @@
         <div class="row">
             <p>VOLTAR</p>
         </div>
-        <div class="row">
-            <p class="mt-5 mb-3 text-muted">&copy; Falida 2022</p>
+        <div class="row mt-5">
+            <footer class="py-3 my-5">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Visão</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre</a></li>
+                </ul>
+                <p class="text-center text-muted">&copy; 2022 Falida Ltda</p>
+            </footer>
         </div>
-    </div>      
+    </div>  
 </body>
 </html>

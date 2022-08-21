@@ -21,10 +21,10 @@
                 </div>
             </nav>
         </div>
-        <div class="row">
+        <div class="row mt-5">
             <h1 class="h3 mb-2 fw-normal">ESCOLHA UMA DAS OPÇÕES ABAIXO</h1>
         </div>
-        <div class="row mt-5" >
+        <div class="row my-5" >
             <a href="holeriteFunc.php" style="width: auto">
                 <div class="person">
                     <div class="container">
@@ -56,18 +56,31 @@
                     <div class="container">
                         <div class="container-inner">
                             <img class="circle"/>
-                            <img class="img img1" src="img/comissoes.svg"/>
+                            <img class="img img1" src="img/ponto.svg"/>
                         </div>
                     </div>
                     <div class="divider"></div>
-                    <div class="name">COMISSÕES</div>
+                    <div class="name">FOLHA DE PONTO</div>
                     <div class="title">Saiba mais</div>
                 </div>
             </a>
         </div>
-        <div class="row">
-            <p class="mt-5 mb-3 text-muted">&copy; Falida 2022</p>
+        <div class="row mt-5">
+            <footer class="pt-5 mt-5">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Visão</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre</a></li>
+                </ul>
+                <p class="text-center text-muted">&copy; 2022 Falida Ltda</p>
+            </footer>
         </div>
-    </div>      
+    </div>    
 </body>
 </html>

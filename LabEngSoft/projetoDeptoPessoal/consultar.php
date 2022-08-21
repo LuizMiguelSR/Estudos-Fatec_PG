@@ -33,30 +33,44 @@
             </div>
         </div>
         <div class="row">
-            <h1 class="h3 mb-2 fw-normal">DIGITE O NOME DO FUNCIONÁRIO OU SETOR</h1>
+            <h1 class="h3 mb-2 fw-normal">DIGITE O NOME DO FUNCIONÁRIO</h1>
         </div>
-        <div class="row mt-5" >
+        <div class="row mt-2">
             <main class="form-add w-100 m-auto">
-                <form class="row g-3">
-                    <div class="col-md-4">
-                        <label for="nome" class="form-label">PESQUISAR</label>
-                        <input type="text" class="form-control" id="consultar" placeholder="Ex. Funcionário X ou Financeiro">
+                <form action="perfil.php" method="post" class="row g-3">
+                    <div class="col-md-8">
+                        <input name="consultar" type="text" class="form-control" id="consultar" placeholder="Ex. Funcionário Antônio">
                     </div>
-                    <div class="col-12 mt-5">
-                        <button type="submit" class="btn btn-primary">CONSULTAR</button>
+                    <div class="row">
+                        <div class="col-md-2 mt-4">
+                            <button type="submit" class="btn btn-primary">CONSULTAR</button>
+                        </div>
                     </div>
                 </form>
             </main>
         </div>
-        <div class="row">
+        <div class="row mt-5">
             <a href="painelRh.php"><img class="mt-3 voltar" src="img/voltar.png" alt="voltar"></a>
         </div>
         <div class="row">
             <p>VOLTAR</p>
         </div>
-        <div class="row">
-            <p class="mt-5 mb-3 text-muted">&copy; Falida 2022</p>
+        <div class="row mt-5">
+            <footer class="py-3 my-5">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Visão</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre</a></li>
+                </ul>
+                <p class="text-center text-muted">&copy; 2022 Falida Ltda</p>
+            </footer>
         </div>
-    </div>      
+    </div>  
 </body>
 </html>

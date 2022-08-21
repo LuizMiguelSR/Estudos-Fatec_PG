@@ -21,7 +21,7 @@
                 </div>
             </nav>
         </div>
-        <div class="row">
+        <div class="row mt-5">
             <h1 class="h3 mb-2 fw-normal">ESCOLHA UMA DAS OPÇÕES ABAIXO</h1>
         </div>
         <div class="row mt-5" >
@@ -65,9 +65,22 @@
                 </div>
             </a>
         </div>
-        <div class="row">
-            <p class="mt-5 mb-3 text-muted">&copy; Falida 2022</p>
+        <div class="row mt-5">
+            <footer class="pt-5 mt-5">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Visão</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre</a></li>
+                </ul>
+                <p class="text-center text-muted">&copy; 2022 Falida Ltda</p>
+            </footer>
         </div>
-    </div>      
+    </div>
 </body>
 </html>

@@ -35,7 +35,7 @@
             <h1 class="h3 mb-2 fw-normal">BEM VINDO, XXXX. ESTE É SEU HOLERITE</h1>
         </div>
         <div class="row mx-5 mt-5">
-            <table class="table table-hover table-bordered border-primary">
+            <table class="table table-bordered border-success hole">
                 <thead>
                     <tr>
                         <th scope="col">Pagamentos</th>
@@ -53,7 +53,7 @@
             </table>
         </div>
         <div class="row mx-5 mt-2">
-            <table class="table table-hover table-bordered border-primary">
+            <table class="table table-bordered border-success hole">
                 <thead>
                     <tr>
                         <th scope="col">Sal. Base</th>
@@ -71,7 +71,7 @@
             </table>
         </div>
         <div class="row mx-5 mt-2">
-            <table class="table table-hover table-bordered border-primary">
+            <table class="table table-bordered border-success hole">
                 <thead>
                     <tr>
                         <th scope="col">FGTS do mês</th>
@@ -86,15 +86,28 @@
                 </tbody>
             </table>
         </div>
-        <div class="row">
+        <div class="row mt-3">
             <a href="painelFunc.php"><img class="mt-3 voltar" src="img/voltar.png" alt="voltar"></a>
         </div>
         <div class="row">
             <p>VOLTAR</p>
         </div>
-        <div class="row">
-            <p class="mt-3 mb-3 text-muted">&copy; Falida 2022</p>
+        <div class="row mt-5">
+            <footer class="py-3 my-5">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Visão</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre</a></li>
+                </ul>
+                <p class="text-center text-muted">&copy; 2022 Falida Ltda</p>
+            </footer>
         </div>
-    </div>      
+    </div> 
 </body>
 </html>

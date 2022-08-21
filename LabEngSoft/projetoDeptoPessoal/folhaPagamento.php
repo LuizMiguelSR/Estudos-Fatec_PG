@@ -34,7 +34,7 @@
         <div class="row">
             <h1 class="h3 mb-2 fw-normal">FOLHA DE PAGAMENTO</h1>
         </div>
-        <div class="row mx-5 mt-2">
+        <div class="row mx-5 mt-5">
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
@@ -44,7 +44,7 @@
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <table class="table table-hover table-bordered border-primary">
+                            <table class="table table-bordered border-success">
                                 <thead>
                                     <tr>
                                         <th scope="col">Nome</th>
@@ -84,7 +84,7 @@
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <table class="table table-hover table-bordered border-primary">
+                            <table class="table table-bordered border-success">
                                 <thead>
                                     <tr>
                                         <th scope="col">Nome</th>
@@ -124,7 +124,7 @@
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <table class="table table-hover table-bordered border-primary">
+                            <table class="table table-bordered border-success">
                                 <thead>
                                     <tr>
                                         <th scope="col">Nome</th>
@@ -158,15 +158,28 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-5">
             <a href="painelRh.php"><img class="mt-3 voltar" src="img/voltar.png" alt="voltar"></a>
         </div>
         <div class="row">
             <p>VOLTAR</p>
         </div>
-        <div class="row">
-            <p class="mt-3 mb-3 text-muted">&copy; Falida 2022</p>
+        <div class="row mt-5">
+            <footer class="py-3 my-5">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Visão</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre</a></li>
+                </ul>
+                <p class="text-center text-muted">&copy; 2022 Falida Ltda</p>
+            </footer>
         </div>
-    </div>      
+    </div>   
 </body>
 </html>
