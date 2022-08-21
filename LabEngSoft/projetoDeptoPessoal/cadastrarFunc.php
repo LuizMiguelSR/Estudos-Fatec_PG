@@ -84,7 +84,7 @@
                     </div>
                     <div class="col-4">
                         <label for="departamento" class="form-label">Departamento</label>
-                        <input type="number" placeholder="Ex. Vendas" class="form-control" id="departamento">
+                        <input type="text" placeholder="Ex. Vendas" class="form-control" id="departamento">
                     </div>
                     <div class="col-4">
                         <label for="cargo" class="form-label">Cargo</label>

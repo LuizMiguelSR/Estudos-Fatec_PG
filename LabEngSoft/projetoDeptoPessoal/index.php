@@ -16,22 +16,22 @@
             <main class="form-signin w-100 m-auto">
                 <img src="img/logoEntrada.svg" alt="Logo">
                 <h1 class="h3 mb-3 fw-normal">BEM VINDO</h1>
-                <form class="p-4 p-md-5 border rounded-3 bg-light" action="">
+                <form  method="post" class="p-4 p-md-5 border rounded-3 bg-light" action="valida.php">
                     <div class="form-floating">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                         <label for="floatingInput">Email</label>
                     </div>
                     <div class="form-floating mt-1">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <input name="senha" type="password" class="form-control" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Senha</label>
                     </div>
                     <br>
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">ENTRAR</button>
+                    <input class="w-100 btn btn-lg btn-primary" type="submit" value="ENTRAR">
                 </form>
             </main>
         </div>
         <div class="row mt-3">
-            <footer class="fixed-bottom py-3 my-4">
+            <footer class="py-3 my-4">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                     <li class="nav-item">
                         <a href="#" class="nav-link px-2 text-muted">Home</a>

@@ -350,3 +350,24 @@ p {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+
+/* -- Relógio -- */
+
+.container1 {
+    background-image: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .clock {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 3%;
+    color: #ffff;
+    display: flex;
+    font-size: 60px;
+    justify-content: center;
+    height: 100px;
+    width: 250px;
+  }
