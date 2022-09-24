@@ -94,5 +94,16 @@ Repositório exclusivo para códigos desenvolvidos em sala de aula
   <details>
   <summary> Programação em Dispositivos Móveis </summary>
   
-  - [Aula 02 - Ambiente e Hello World](/ProgDispMoveis/expo/meuAppExpo/App.js);
+  - Aula 05
+    - [App02](/ProgDispMoveis/Exercicios/aula05-app02/App.js);
+    - [App03](/ProgDispMoveis/Exercicios/aula05-app03/App.js);
+  - Aula 06
+    - [App04](/ProgDispMoveis/Exercicios/aula06-app04/App.js);
+    - [App05](/ProgDispMoveis/Exercicios/aula06-app05/App.js);
+    - [App06](/ProgDispMoveis/Exercicios/aula06-app06/App.js);
+  - Aula 07
+    - [App07](/ProgDispMoveis/Exercicios/aula07-app07/App.js);
+    - [App08](/ProgDispMoveis/Exercicios/aula07-app08/App.js);
+    - [App09](/ProgDispMoveis/Exercicios/aula07-app09/App.js);
+    - [App10](/ProgDispMoveis/Exercicios/aula07-app10/App.js);
   </details>
