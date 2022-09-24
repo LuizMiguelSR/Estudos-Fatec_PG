@@ -94,6 +94,8 @@ Repositório exclusivo para códigos desenvolvidos em sala de aula
   <details>
   <summary> Programação em Dispositivos Móveis (React Native) </summary>
   
+  - Aula 04 - Componentes
+    - [App01](/ProgDispMoveis/Exercicios/aula04-app01/App.js);
   - Aula 05 - Componentes, Props e States
     - [App02](/ProgDispMoveis/Exercicios/aula05-app02/App.js);
     - [App03](/ProgDispMoveis/Exercicios/aula05-app03/App.js);
