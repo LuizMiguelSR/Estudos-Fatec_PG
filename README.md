@@ -92,7 +92,7 @@ Repositório exclusivo para códigos desenvolvidos em sala de aula
 - ## **5º Semestre**
   
   <details>
-  <summary> Programação em Dispositivos Móveis </summary>
+  <summary> Programação em Dispositivos Móveis (React Native) </summary>
   
   - Aula 05 - Componentes, Props e States
     - [App02](/ProgDispMoveis/Exercicios/aula05-app02/App.js);
