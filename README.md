@@ -94,14 +94,14 @@ Repositório exclusivo para códigos desenvolvidos em sala de aula
   <details>
   <summary> Programação em Dispositivos Móveis </summary>
   
-  - Aula 05
+  - Aula 05 - Componentes, Props e States
     - [App02](/ProgDispMoveis/Exercicios/aula05-app02/App.js);
     - [App03](/ProgDispMoveis/Exercicios/aula05-app03/App.js);
-  - Aula 06
+  - Aula 06 - Apps + GitHub
     - [App04](/ProgDispMoveis/Exercicios/aula06-app04/App.js);
     - [App05](/ProgDispMoveis/Exercicios/aula06-app05/App.js);
     - [App06](/ProgDispMoveis/Exercicios/aula06-app06/App.js);
-  - Aula 07
+  - Aula 07 - Mais componentes
     - [App07](/ProgDispMoveis/Exercicios/aula07-app07/App.js);
     - [App08](/ProgDispMoveis/Exercicios/aula07-app08/App.js);
     - [App09](/ProgDispMoveis/Exercicios/aula07-app09/App.js);
