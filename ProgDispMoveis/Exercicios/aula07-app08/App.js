@@ -12,35 +12,35 @@ class App extends Component{
         <View style={styles.box0}>
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <View style={styles.box1}>
-              <Image source={require('./vaga.jpg')} style={styles.imagem} />
+              <Image source={require('./relogio.jpg')} style={styles.imagem} />
               <Text style={styles.texto}>Velit quis aute enim commodo. Magna fugiat exercitation cupidatat incididunt nisi anim quis laborum labore velit.</Text>
             </View>
             <View style={styles.box1}>
-              <Image source={require('./vaga.jpg')} style={styles.imagem} />
+              <Image source={require('./relogio.jpg')} style={styles.imagem} />
               <Text style={styles.texto}>Velit quis aute enim commodo. Magna fugiat exercitation cupidatat incididunt nisi anim quis laborum labore velit.</Text>
             </View>
             <View style={styles.box1}>
-              <Image source={require('./vaga.jpg')} style={styles.imagem} />
+              <Image source={require('./relogio.jpg')} style={styles.imagem} />
               <Text style={styles.texto}>Velit quis aute enim commodo. Magna fugiat exercitation cupidatat incididunt nisi anim quis laborum labore velit.</Text>
             </View>
             <View style={styles.box1}>
-              <Image source={require('./vaga.jpg')} style={styles.imagem} />
+              <Image source={require('./relogio.jpg')} style={styles.imagem} />
               <Text style={styles.texto}>Velit quis aute enim commodo. Magna fugiat exercitation cupidatat incididunt nisi anim quis laborum labore velit.</Text>
             </View>
             <View style={styles.box1}>
-              <Image source={require('./vaga.jpg')} style={styles.imagem} />
+              <Image source={require('./relogio.jpg')} style={styles.imagem} />
               <Text style={styles.texto}>Velit quis aute enim commodo. Magna fugiat exercitation cupidatat incididunt nisi anim quis laborum labore velit.</Text>
             </View>
             <View style={styles.box1}>
-              <Image source={require('./vaga.jpg')} style={styles.imagem} />
+              <Image source={require('./relogio.jpg')} style={styles.imagem} />
               <Text style={styles.texto}>Velit quis aute enim commodo. Magna fugiat exercitation cupidatat incididunt nisi anim quis laborum labore velit.</Text>
             </View>
             <View style={styles.box1}>
-              <Image source={require('./vaga.jpg')} style={styles.imagem} />
+              <Image source={require('./relogio.jpg')} style={styles.imagem} />
               <Text style={styles.texto}>Velit quis aute enim commodo. Magna fugiat exercitation cupidatat incididunt nisi anim quis laborum labore velit.</Text>
             </View>
             <View style={styles.box1}>
-              <Image source={require('./vaga.jpg')} style={styles.imagem} />
+              <Image source={require('./relogio.jpg')} style={styles.imagem} />
               <Text style={styles.texto}>Velit quis aute enim commodo. Magna fugiat exercitation cupidatat incididunt nisi anim quis laborum labore velit.</Text>
             </View>
           </ScrollView>
