@@ -17,16 +17,16 @@
   <details>
   <summary> Apps link no GitHub </summary>
 
-  - [App 01 - Meu Perfil](/ProgDispMoveis/Exercicios/aula04-app01);
-  - [App 02 - Contador de Pessoas presentes na Loja](/ProgDispMoveis/Exercicios/aula05-app02);
-  - [App 03 - Multiplicação de 2 números](/ProgDispMoveis/Exercicios/aula05-app03);
-  - [App 04 - Alcool ou Gasolina](/ProgDispMoveis/Exercicios/aula06-app04);
-  - [App 05 - Cálculo do IMC](/ProgDispMoveis/Exercicios/aula06-app05);
-  - [App 06 - Jogo do número aleatório](/ProgDispMoveis/Exercicios/aula06-app06);
-  - [App 07 - Formulário de abertura de conta bancária](/ProgDispMoveis/Exercicios/aula07-app07);
-  - [App 08 - Anúncios para venda de produtos](/ProgDispMoveis/Exercicios/aula07-app08);
-  - [App 09 - Vagas de emprego de TI](/ProgDispMoveis/Exercicios/aula07-app09);
-  - [App 10 - Conversor de Moedas](/ProgDispMoveis/Exercicios/aula07-app10);
+  - [App 01 - Meu Perfil](/ProgDispMoveis/ExerciciosP1/aula04-app01);
+  - [App 02 - Contador de Pessoas presentes na Loja](/ProgDispMoveis/ExerciciosP1/aula05-app02);
+  - [App 03 - Multiplicação de 2 números](/ProgDispMoveis/ExerciciosP1/aula05-app03);
+  - [App 04 - Alcool ou Gasolina](/ProgDispMoveis/ExerciciosP1/aula06-app04);
+  - [App 05 - Cálculo do IMC](/ProgDispMoveis/ExerciciosP1/aula06-app05);
+  - [App 06 - Jogo do número aleatório](/ProgDispMoveis/ExerciciosP1/aula06-app06);
+  - [App 07 - Formulário de abertura de conta bancária](/ProgDispMoveis/ExerciciosP1/aula07-app07);
+  - [App 08 - Anúncios para venda de produtos](/ProgDispMoveis/ExerciciosP1/aula07-app08);
+  - [App 09 - Vagas de emprego de TI](/ProgDispMoveis/ExerciciosP1/aula07-app09);
+  - [App 10 - Conversor de Moedas](/ProgDispMoveis/ExerciciosP1/aula07-app10);
   </details>
 
   <details>
