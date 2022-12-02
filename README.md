@@ -109,11 +109,11 @@ Repositório exclusivo para códigos desenvolvidos em sala de aula
     - [App09](/ProgDispMoveis/ExerciciosP1/aula07-app09/App.js);
     - [App10](/ProgDispMoveis/ExerciciosP1/aula07-app10/App.js);
   - Aula 10 - API’s Get
-    - [App07](/ProgDispMoveis/ExerciciosP2/aula10-app17/App.js);
-    - [App08](/ProgDispMoveis/ExerciciosP2/aula10-app18/App.js);
-    - [App09](/ProgDispMoveis/ExerciciosP2/aula10-app19/App.js);
-    - [App10](/ProgDispMoveis/ExerciciosP2/aula10-app20/App.js);
+    - [App17](/ProgDispMoveis/ExerciciosP2/aula10-app17/App.js);
+    - [App18](/ProgDispMoveis/ExerciciosP2/aula10-app18/App.js);
+    - [App19](/ProgDispMoveis/ExerciciosP2/aula10-app19/App.js);
+    - [App20](/ProgDispMoveis/ExerciciosP2/aula10-app20/App.js);
   - Aula 11 - APIs - GET POST PUT e DELETE
-    - [App07](/ProgDispMoveis/ExerciciosP2/aula11-app21/App.js);
-    - [App08](/ProgDispMoveis/ExerciciosP2/aula11-app22/App.js);
+    - [App21](/ProgDispMoveis/ExerciciosP2/aula11-app21/App.js);
+    - [App22](/ProgDispMoveis/ExerciciosP2/aula11-app22/App.js);
   </details>
