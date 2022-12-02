@@ -21,8 +21,8 @@
   - [App 18 - API GET - Perfil dos Devs](/ProgDispMoveis/ExerciciosP2/aula10-app18);
   - [App 19 - API GET - Conversor de Moedas](/ProgDispMoveis/ExerciciosP2/aula10-app19);
   - [App 20 - API GET - Filmes](/ProgDispMoveis/ExerciciosP2/aula10-app20);
-  - [App 21 - Cálculo do IMC](/ProgDispMoveis/ExerciciosP2/aula11-app21);
-  - [App 22 - Cálculo do IMC](/ProgDispMoveis/ExerciciosP2/aula11-app22);
+  - [App 21 - API GET, POST, PUT e DELETE - Tarefas corrrigir](/ProgDispMoveis/ExerciciosP2/aula11-app21);
+  - [App 22 - API GET, POST, PUT e DELETE - Tarefas melhorar](/ProgDispMoveis/ExerciciosP2/aula11-app22);
   </details>
 
   <details>
@@ -32,6 +32,6 @@
   - [App 18 - API GET - Perfil dos Devs](https://snack.expo.dev/@luizmiguelsr/aula10-app18);
   - [App 19 - API GET - Conversor de Moedas](https://snack.expo.dev/@luizmiguelsr/aula10-app19);
   - [App 20 - API GET - Filmes](https://snack.expo.dev/@luizmiguelsr/aula10-app20?platform=web);
-  - [App 21 - Cálculo do IMC](/ProgDispMoveis/ExerciciosP2/aula11-app21);
-  - [App 22 - Cálculo do IMC](/ProgDispMoveis/ExerciciosP2/aula11-app22);
+  - [App 21 - API GET, POST, PUT e DELETE - Tarefas corrrigir](https://snack.expo.dev/@luizmiguelsr/aula11-app21);
+  - [App 22 - API GET, POST, PUT e DELETE - Tarefas melhorar](https://snack.expo.dev/@luizmiguelsr/aula11-app22);
   </details>
