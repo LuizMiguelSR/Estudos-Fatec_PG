@@ -95,17 +95,25 @@ Repositório exclusivo para códigos desenvolvidos em sala de aula
   <summary> Programação em Dispositivos Móveis (React Native) </summary>
   
   - Aula 04 - Componentes
-    - [App01](/ProgDispMoveis/Exercicios/aula04-app01/App.js);
+    - [App01](/ProgDispMoveis/ExerciciosP1/aula04-app01/App.js);
   - Aula 05 - Componentes, Props e States
-    - [App02](/ProgDispMoveis/Exercicios/aula05-app02/App.js);
-    - [App03](/ProgDispMoveis/Exercicios/aula05-app03/App.js);
+    - [App02](/ProgDispMoveis/ExerciciosP1/aula05-app02/App.js);
+    - [App03](/ProgDispMoveis/ExerciciosP1/aula05-app03/App.js);
   - Aula 06 - Apps + GitHub
-    - [App04](/ProgDispMoveis/Exercicios/aula06-app04/App.js);
-    - [App05](/ProgDispMoveis/Exercicios/aula06-app05/App.js);
-    - [App06](/ProgDispMoveis/Exercicios/aula06-app06/App.js);
+    - [App04](/ProgDispMoveis/ExerciciosP1/aula06-app04/App.js);
+    - [App05](/ProgDispMoveis/ExerciciosP1/aula06-app05/App.js);
+    - [App06](/ProgDispMoveis/ExerciciosP1/aula06-app06/App.js);
   - Aula 07 - Mais componentes
-    - [App07](/ProgDispMoveis/Exercicios/aula07-app07/App.js);
-    - [App08](/ProgDispMoveis/Exercicios/aula07-app08/App.js);
-    - [App09](/ProgDispMoveis/Exercicios/aula07-app09/App.js);
-    - [App10](/ProgDispMoveis/Exercicios/aula07-app10/App.js);
+    - [App07](/ProgDispMoveis/ExerciciosP1/aula07-app07/App.js);
+    - [App08](/ProgDispMoveis/ExerciciosP1/aula07-app08/App.js);
+    - [App09](/ProgDispMoveis/ExerciciosP1/aula07-app09/App.js);
+    - [App10](/ProgDispMoveis/ExerciciosP1/aula07-app10/App.js);
+  - Aula 10 - API’s Get
+    - [App07](/ProgDispMoveis/ExerciciosP2/aula10-app17/App.js);
+    - [App08](/ProgDispMoveis/ExerciciosP2/aula10-app18/App.js);
+    - [App09](/ProgDispMoveis/ExerciciosP2/aula10-app19/App.js);
+    - [App10](/ProgDispMoveis/ExerciciosP2/aula10-app20/App.js);
+  - Aula 11 - APIs - GET POST PUT e DELETE
+    - [App07](/ProgDispMoveis/ExerciciosP2/aula11-app21/App.js);
+    - [App08](/ProgDispMoveis/ExerciciosP2/aula11-app22/App.js);
   </details>
