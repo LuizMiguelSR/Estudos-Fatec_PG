@@ -127,4 +127,6 @@ Repositório exclusivo para códigos desenvolvidos em sala de aula
     - [Ex01 - Maior Número](/TopEspInfo/Exercicios/Aula02Conceitos/ex01.html);
     - [Ex02 - Maior idade](/TopEspInfo/Exercicios/Aula02Conceitos/ex02.html);
     - [Ex03 - Média ponderada](/TopEspInfo/Exercicios/Aula02Conceitos/ex03.html);
+  - Aula 03 - Estruturas de repetição do JavaScript
+    - [Ex01 - Jogo da velha](/TopEspInfo/Exercicios/Aula03EstruturasDeRepeticao/index.html);
   </details>
