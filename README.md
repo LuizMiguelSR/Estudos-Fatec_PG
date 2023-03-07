@@ -117,3 +117,14 @@ Repositório exclusivo para códigos desenvolvidos em sala de aula
     - [App21](/ProgDispMoveis/ExerciciosP2/aula11-app21/App.js);
     - [App22](/ProgDispMoveis/ExerciciosP2/aula11-app22/App.js);
   </details>
+
+- ## **6º Semestre**
+  
+  <details>
+  <summary> Tópicos especiais de informática </summary>
+  
+  - Aula 02 - Conceitos do JavaScript
+    - [Ex01 - Maior Número](/TopEspInfo/Exercicios/ex01.html);
+    - [Ex02 - Maior idade](/TopEspInfo/Exercicios/ex02.html);
+    - [Ex03 - Média ponderada](/TopEspInfo/Exercicios/ex03.html);
+  </details>
