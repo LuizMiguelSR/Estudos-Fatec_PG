@@ -129,6 +129,9 @@ Repositório exclusivo para códigos desenvolvidos em sala de aula
     - [Ex03 - Média ponderada](/TopEspInfo/Exercicios/Aula02Conceitos/ex03.html);
   - Aula 03 - Estruturas de repetição do JavaScript
     - [Ex01 - Jogo da velha](/TopEspInfo/Exercicios/Aula03EstruturasDeRepeticao/index.html);
-  - Aula 06 - Space Invaders
+  - Aula 05 - Jogo da Forca e Quiz em JavaScript
+    - [Ex01 - Jogo da forca](/TopEspInfo/Exercicios/Aula05Jogos/forca/index.html);
+    - [Ex02 - Jogo Quiz](/TopEspInfo/Exercicios/Aula05Jogos/quiz/index.html);
+  - Aula 06 - Space Invaders em JavaScript
     - [Ex01 - Jogo Space Invaders](/TopEspInfo/Exercicios/Aula06Space/index.html);
   </details>
